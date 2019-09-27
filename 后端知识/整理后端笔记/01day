@@ -1,0 +1,151 @@
+第一天知识点
+    Django
+    MVC是设计思想.不是设计模式
+
+    MVC的主要功能功能解耦
+    model
+    view
+    controller
+    就像电脑一样,内存条坏了就换内存条,不会去换电脑
+
+    MVT/
+    model
+    view
+    templates
+
+    业务逻辑:用户想要啥,你就给啥
+
+
+
+
+    virtualenv  虚拟环境
+    virtualenvwrapper  虚拟环境扩展包-------简化命令
+
+    mkvirtualenv  创建虚拟环境
+    workon xxx 切换环境
+    deactivate 退出环境
+    rmvirtualenv 删除环境
+
+    pip freeze 除了自带的 你安装了哪些包
+    pip list 查看所有包
+
+
+
+进入到一个指定文件夹 在创建项目
+django-admin startproject xxx (test1807)
+
+进入项目才 可以创建应用
+python3 manage.py startapp xxx (booktest)
+********
+manage.py 管理项目用的 可以创建应用
+settings.py  django配置东西
+urls.py 根据的url地址,网站地址
+wsgi.py 部署---上线
+********
+
+应用:
+models.py---模型
+views.py---视图
+admin.py---管理后台
+migrations---迁移
+tests.py---用来做测试的
+
+给pycharm指定环境---settings---project---project interpreter 选择环境
+
+
+django 默认提供开启服务器
+
+python3 manage.py runserver 启动服务器
+python3 manage.py runserver ip:prot自定义端口号
+
+
+insert into table_name (xx,xx,xx) values(123,'xx')
+
+面向对象思想
+
+原生sql很麻烦
+ORM框架-----原理 用的元类
+至少得三套
+支持关系型:
+    sqlite
+    oracle
+    mysql
+
+O---object--- 也就是对象的意思
+R---relation---关系 也就是关系数据库中数据表的
+M---mapping--- 映射
+
+类名-----表名
+类属性-----字段
+
+表的关系----一对一.一对多.多对多
+
+书的表----id.btitle.bpub_date
+
+ORM框架
+优点:提升开发效率
+缺点:牺牲了执行效率
+
+生成迁移文件
+python3 manage.py makemigrations
+迁移
+python3 manage.py migrate
+
+测试
+开启: python3 manage.py shell
+增:
+导入>>>from booktest.models imort BookInfo
+赋值>>>b=BookInfo()
+插入>>>b.btitle='西游记'
+    >>>from datetime import datetime
+    >>>b.bpub_date=datetime.now()
+    >>>b.save()提交 插入成功
+查:
+全部 >>>BookInfo.objects.all()
+单一 >>>BookInfo.objects.get(id=1)
+改:
+    >>>b1=BookInfo.object.all 等于查询的语句 找个变量接收它
+    >>>b1.btitle 先查出来
+    >>>b1.btitle='水浒传' 修改
+    >>>b1.save() 提交 修改成功
+    >>>b1.btitle 在进行查询
+删:
+    >>>b1=BookInfo.object.get(id=1)
+    >>>b1.delete()
+
+
+视图:
+http://127.0.0.1:8000/
+
+index/
+
+在Views里创建视图
+
+在根据urls配置
+from django.http import HttpResponse
+def index(reqiest):
+    '''
+    返回给签单一个 HttpResponse
+    :param request:
+    :return:
+    '''
+    return HttpResponse('hallo')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

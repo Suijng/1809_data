@@ -1,0 +1,1361 @@
+
+        <html xmlns:v="urn:schemas-microsoft-com:vml"
+        xmlns:o="urn:schemas-microsoft-com:office:office"
+        xmlns:w="urn:schemas-microsoft-com:office:word"
+        xmlns="http://www.w3.org/TR/REC-html40">
+        <head><meta http-equiv=Content-Type content="text/html;  
+        charset=utf-8">
+        <style type="text/css">
+            table  
+            {  
+                border-collapse: collapse;
+                border: none;  
+                width: 100%;  
+            }  
+            td  
+            {  
+                border: solid #CCC 1px;  
+            }  
+            .codestyle{
+                word-break: break-all;
+                background:silver;mso-highlight:silver;
+            }
+        </style>
+        <meta name=ProgId content=Word.Document>
+        <meta name=Generator content="Microsoft Word 11">
+        <meta name=Originator content="Microsoft Word 11">
+        <xml><w:WordDocument><w:View>Print</w:View></xml></head>
+        <body><h1>1、用户user</h1><div style="margin-left:20px;"><h2>1.1、用户注册接口</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>用户注册接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://127.0.0.1:8000/api/users/</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>POST </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">username</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>用户名=手机号</td>
+</tr>
+<tr>
+<td style="text-align: left;">code</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>密码</td>
+</tr>
+<tr>
+<td style="text-align: left;">mobile</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">string</td>
+<td>手机号</td>
+</tr>
+<tr>
+<td style="text-align: left;">password</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>密码</td>
+</tr>
+</tbody>
+</table>
+<p><strong>输入示例</strong></p>
+<table width='100%' class='codestyle'><pre><code> {
+    "username": "13612341234",
+    "code": "2714",
+    "mobile": "",
+    "password": "lll7295185"
+}</code></pre></table>
+<p><strong>返回示例</strong></p>
+<table width='100%' class='codestyle'><pre><code>  {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4LCJ1c2VybmFtZSI6IjEzNjEyMzQxMjM0IiwiZXhwIjoxNTY0OTkzNzg1LCJlbWFpbCI6bnVsbH0.Pm_QvMbtjHjcUTGKu4IS9EkZ9AloFtWmImBXdK7li9M",
+    "name": "13612341234"
+}</code></pre></table>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul>
+<p>欢迎使用ShowDoc！000/api/users/ `</p>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>POST </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">username</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>用户名=手机号</td>
+</tr>
+<tr>
+<td style="text-align: left;">code</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>密码</td>
+</tr>
+<tr>
+<td style="text-align: left;">mobile</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">string</td>
+<td>手机号</td>
+</tr>
+<tr>
+<td style="text-align: left;">password</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>密码</td>
+</tr>
+</tbody>
+</table>
+<p><strong>输入示例</strong></p>
+<table width='100%' class='codestyle'><pre><code> {
+    "username": "13612341234",
+    "code": "2714",
+    "mobile": "",
+    "password": "lll7295185"
+}</code></pre></table>
+<p><strong>返回示例</strong></p>
+<table width='100%' class='codestyle'><pre><code>  {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4LCJ1c2VybmFtZSI6IjEzNjEyMzQxMjM0IiwiZXhwIjoxNTY0OTkzNzg1LCJlbWFpbCI6bnVsbH0.Pm_QvMbtjHjcUTGKu4IS9EkZ9AloFtWmImBXdK7li9M",
+    "name": "13612341234"
+}</code></pre></table>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://127.0.0.1:8000/api/users/1/</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>UPDATE   /api/users/{id}/</li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">id</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">int</td>
+<td>当前用户id</td>
+</tr>
+<tr>
+<td style="text-align: left;">name</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">string</td>
+<td>姓名</td>
+</tr>
+<tr>
+<td style="text-align: left;">gender</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">string</td>
+<td>性别</td>
+</tr>
+<tr>
+<td style="text-align: left;">birthday</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">datetime</td>
+<td>出生日期</td>
+</tr>
+<tr>
+<td style="text-align: left;">email</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">string</td>
+<td>邮箱</td>
+</tr>
+</tbody>
+</table>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul>
+<p>欢迎使用ShowDoc！</p></div><h2>1.2、获取验证码接口</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>获取验证码接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://127.0.0.1:8000/api/code/</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>POST </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">mobile</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>手机号</td>
+</tr>
+</tbody>
+</table>
+<p><strong>输入示例</strong></p>
+<table width='100%' class='codestyle'><pre><code>{
+    "mobile": "13812341234"
+}</code></pre></table>
+<p><strong>返回示例</strong></p>
+<table width='100%' class='codestyle'><pre><code>  {
+    "code": "2394",
+    "msg": "发送成功"
+}</code></pre></table>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul>
+<p>欢迎使用ShowDoc！</p></div><h2>1.3、登录</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>用户登录接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://127.0.0.1:8000/api/login/</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>POST </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">username</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>用户名</td>
+</tr>
+<tr>
+<td style="text-align: left;">password</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>密码</td>
+</tr>
+<tr>
+<td style="text-align: left;">name</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">string</td>
+<td>昵称</td>
+</tr>
+</tbody>
+</table>
+<p><strong>输入示例</strong></p>
+<table width='100%' class='codestyle'><pre><code>{
+    "username": "18512341234",
+    "password": "lll7259158"
+}</code></pre></table>
+<p><strong>返回示例</strong></p>
+<table width='100%' class='codestyle'><pre><code>{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjE4NTEzNjE5MTQxIiwiZXhwIjoxNTY1MDA2NTQ2LCJlbWFpbCI6IjE2Mjc3NjU5MTNAcXEuY29tIiwidXNlcl9pZCI6NH0.Jbs3_CXYsH-QH9Q1l6sMmw-VZdwFEA-uNLjG_1ROxpM"
+}</code></pre></table>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul>
+<p>欢迎使用ShowDoc！</p></div></div><h1>2、商品goods</h1><div style="margin-left:20px;"><h2>2.1、首页轮播图</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>首页轮播图接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://127.0.0.1:8000/api/banner/</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>GET </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Null</td>
+<td style="text-align: left;">Null</td>
+<td style="text-align: left;">Null</td>
+<td>Null</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回示例</strong></p>
+<table width='100%' class='codestyle'><pre><code> [
+    {
+        "id": 14,
+        "image": "http://127.0.0.1:8000/media/banner/banner1.jpg",
+        "index": 0,
+        "add_time": "2019-07-19T14:44:00",
+        "goods": 1
+    },
+]</code></pre></table>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul>
+<p>欢迎使用ShowDoc！</p></div><h2>2.2、商品分类</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>商品分类接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://127.0.0.1:8000/api/categorys/</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>GET </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">id</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">int</td>
+<td>一级分类id</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回示例</strong></p>
+<table width='100%' class='codestyle'><pre><code>[
+    {
+        "id": 1,
+        "sub_cat": [
+            {
+                "id": 2,
+                "sub_cat": [
+                    {
+                        "id": 3,
+                        "name": "羊肉",
+                        "code": "yr",
+                        "desc": "",
+                        "category_type": 3,
+                        "is_tab": false,
+                        "add_time": "2019-07-19T10:54:09.142671",
+                        "parent_category": 2
+                    },
+                ]
+            }
+        ]
+    }
+]</code></pre></table>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul>
+<p>欢迎使用ShowDoc！</p></div><h2>2.3、商品列表</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>商品列表页接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://127.0.0.1:8000/api/goods/</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>GET </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">top_category</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">int</td>
+<td>分类id</td>
+<td>?top_category=2</td>
+</tr>
+<tr>
+<td style="text-align: left;">ordering</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">string</td>
+<td>销量排序</td>
+<td>&ordering=-shop_price</td>
+</tr>
+<tr>
+<td style="text-align: left;">ordering</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">string</td>
+<td>价格排序</td>
+<td>&ordering=-sold_num</td>
+</tr>
+<tr>
+<td style="text-align: left;">&pricemin=</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">int</td>
+<td>最小价格</td>
+<td>&pricemin=20</td>
+</tr>
+<tr>
+<td style="text-align: left;">&pricemax=</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">int</td>
+<td>最大价格</td>
+<td>&pricemax=50</td>
+</tr>
+<tr>
+<td style="text-align: left;">page</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">int</td>
+<td>页码</td>
+<td>?page=2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回示例</strong></p>
+<table width='100%' class='codestyle'><pre><code> {
+    "count": 53,
+    "next": "http://127.0.0.1:8000/api/goods/?page=2",
+    "previous": null,
+    "results": [
+        {
+            "id": 1,
+            "images": [
+                {
+                    "image": "http://127.0.0.1:8000/media/goods/images/1_P_1449024889889.jpg"
+                },
+                {
+                    "image": "http://127.0.0.1:8000/media/goods/images/1_P_1449024889264.jpg"
+                },
+                {
+                    "image": "http://127.0.0.1:8000/media/goods/images/1_P_1449024889726.jpg"
+                },
+                {
+                    "image": "http://127.0.0.1:8000/media/goods/images/1_P_1449024889018.jpg"
+                },
+                {
+                    "image": "http://127.0.0.1:8000/media/goods/images/1_P_1449024889287.jpg"
+                }
+            ],
+            "add_time": "2019-07-19 10:54",
+            "goods_sn": "",
+            "name": "新鲜水果甜蜜香脆单果约800克",
+            "click_num": 0,
+            "sold_num": 0,
+            "fav_num": 0,
+            "goods_num": 0,
+            "market_price": 232.0,
+            "shop_price": 156.0,
+            "goods_brief": "食用百香果可以增加胃部饱腹感，减少余热量的摄入，还可以吸附胆固醇和胆汁之类有机分子，抑制人体对脂肪的吸收。因此，长期食用有利于改善人体营养吸收结构，降低体内脂肪，塑造健康优美体态。",
+            "goods_desc": "<p><img src=\"/media/goods/images/2_20170719161405_249.jpg\" title=\"\" alt=\"2.jpg\"/></p><p><img src=\"/media/goods/images/2_20170719161414_628.jpg\" title=\"\" alt=\"2.jpg\"/></p><p><img src=\"/media/goods/images/2_20170719161435_381.jpg\" title=\"\" alt=\"2.jpg\"/></p>",
+            "ship_free": true,
+            "goods_front_image": "http://127.0.0.1:8000/media/goods/images/1_P_1449024889889.jpg",
+            "is_new": false,
+            "is_hot": false,
+            "category": 20
+        },
+    ]
+  }</code></pre></table>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul>
+<p>欢迎使用ShowDoc！</p></div><h2>2.4、热搜词</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>热搜词接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://127.0.0.1:8000/api/hotsearchs/</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>GET </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Null</td>
+<td style="text-align: left;">Null</td>
+<td style="text-align: left;">Null</td>
+<td>Null</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回示例</strong></p>
+<table width='100%' class='codestyle'><pre><code>[
+    {
+        "id": 1,
+        "keywords": "夹心巧克力",
+        "index": 0,
+        "add_time": "2019-07-19T14:54:00"
+    },
+]</code></pre></table>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul>
+<p>欢迎使用ShowDoc！</p></div><h2>2.5、首页下方广告</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>首页下方广告接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://127.0.0.1:8000/api/indexgoods/</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>GET </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">username</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>用户名</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回示例</strong></p>
+<table width='100%' class='codestyle'><pre><code> [
+    {
+        "id": 1,
+        "brands": ["add_time": "2019-07-19 10:54",
+                "goods_sn": "",
+                "name": "新鲜水果甜蜜香脆单果约800克",
+                "click_num": 0,
+                "sold_num": 0,
+                "fav_num": 0,
+                "goods_num": 0,
+                "market_price": 232.0,
+                "shop_price": 156.0,
+                "goods_brief": "食用百香果可以增加胃部饱腹感，减少余热量的摄入，还可以吸附胆固醇和胆汁之类有机分子，抑制人体对脂肪的吸收。因此，长期食用有利于改善人体营养吸收结构，降低体内脂肪，塑造健康优美体态。",
+                "goods_desc": "<p><img src=\"/media/goods/images/2_20170719161405_249.jpg\" title=\"\" alt=\"2.jpg\"/></p><p><img src=\"/media/goods/images/2_20170719161414_628.jpg\" title=\"\" alt=\"2.jpg\"/></p><p><img src=\"/media/goods/images/2_20170719161435_381.jpg\" title=\"\" alt=\"2.jpg\"/></p>",
+                "ship_free": true,
+                "goods_front_image": "http://127.0.0.1:8000/media/goods/images/1_P_1449024889889.jpg",
+                "is_new": false,
+                "is_hot": false,
+                "category": 20
+            {
+                "id": 1,
+                "name": "健康美味",
+                "desc": "健康,美味,健康,美味,健康,美味,健康,美味健康,美味,健康,美味健康,美味",
+                "image": "http://127.0.0.1:8000/media/brands/lyfs-1_i8NFsGz.jpg",
+                "add_time": "2019-07-31T10:08:00",
+                "category": 1
+            },
+        ]
+         "goods": [
+            {
+                "id": 1,
+                "images": [
+                    {
+                        "image": "http://127.0.0.1:8000/media/goods/images/1_P_1449024889889.jpg"
+                    },
+                ]
+            }
+        ]
+        "add_time": "2019-07-19 10:54",
+                "goods_sn": "",
+                "name": "新鲜水果甜蜜香脆单果约800克",
+                "click_num": 0,
+                "sold_num": 0,
+                "fav_num": 0,
+                "goods_num": 0,
+                "market_price": 232.0,
+                "shop_price": 156.0,
+                "goods_brief": "食用百香果可以增加胃部饱腹感，减少余热量的摄入，还可以吸附胆固醇和胆汁之类有机分子，抑制人体对脂肪的吸收。因此，长期食用有利于改善人体营养吸收结构，降低体内脂肪，塑造健康优美体态。",
+                "goods_desc": "<p><img src=\"/media/goods/images/2_20170719161405_249.jpg\" title=\"\" alt=\"2.jpg\"/></p><p><img src=\"/media/goods/images/2_20170719161414_628.jpg\" title=\"\" alt=\"2.jpg\"/></p><p><img src=\"/media/goods/images/2_20170719161435_381.jpg\" title=\"\" alt=\"2.jpg\"/></p>",
+                "ship_free": true,
+                "goods_front_image": "http://127.0.0.1:8000/media/goods/images/1_P_1449024889889.jpg",
+                "is_new": false,
+                "is_hot": false,
+                "category": 20
+    }
+]</code></pre></table>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul>
+<p>欢迎使用ShowDoc！</p></div></div><h1>3、交易trade</h1><div style="margin-left:20px;"><h2>3.1、查 删订单</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>获取  删除 订单接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://127.0.0.1:8000/api/orders/</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>GET </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Null</td>
+<td style="text-align: left;">Null</td>
+<td style="text-align: left;">Null</td>
+<td>Null</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回示例</strong></p>
+<table width='100%' class='codestyle'><pre><code> [
+    {
+        "id": 1,
+        "order_sn": "20190730150705171",
+        "trade_no": null,
+        "pay_status": "paying",
+        "pay_time": null,
+        "add_time": "2019-07-30 15-07",
+        "alipay_url": "https://openapi.alipaydev.com/gateway.do?app_id=2016101100659996&biz_content=%7B%22out_trade_no%22%3A%2220190730150705171%22%2C%22subject%22%3A%2220190730150705171%22%2C%22product_code%22%3A%22FAST_INSTANT_TRADE_PAY%22%2C%22total_amount%22%3A13.0%7D&charset=utf-8&method=alipay.trade.page.pay&notify_url=http%3A%2F%2F127.0.0.1%3A8000%2Fapi%2Failpay%2Freturn%2F&return_url=http%3A%2F%2F127.0.0.1%3A8000%2Fapi%2Failpay%2Freturn%2F&sign_type=RSA2&timestamp=2019-07-31+19%3A32%3A37&version=1.0&sign=AqK7nYV%2BqYaZJamqSQp4SJIE94aLw4RXjXSgCH7mCGngCO5%2F9k%2BCUgjfq7f2%2BrdqLmMfZjbcYcU%2BPupVSvxGWIKtxNiWNbMqxXFNCIdayyBlDUm%2F7CdGPTV77zJhWdwVVY4mcDrzQQHOp59Zu7TbQlXrjqxzfeByE1bObuGQQX1SC1YxXJxzxR6gu8M3y7v3HwBUWuv30qqagE%2BsVyzl4LM7hb96P2h6qGZ15o1NXII57yVOiru6PtjkNTYoNiDUTRVkJOvs8mUdU4MFNqSiDsDJNXXLQuCieS5EVbQEe43ghAW9G3jrk7caSXexAf9nL20KY0VIn4ts5EUkSzv2SQ%3D%3D",
+        "post_script": "割发代首 股份的水果放到是格式大范甘迪发股份的股份都是个",
+        "order_mount": 13.0,
+        "address": "北京市海淀区中关村大街59号",
+        "signer_name": "袁大傻",
+        "singer_mobile": "18512341234"
+    },
+]</code></pre></table>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>DELETE   /api/orders/{id}/</li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">id</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">int</td>
+<td>订单id</td>
+</tr>
+</tbody>
+</table>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul>
+<p>欢迎使用ShowDoc！</p></div><h2>3.2、添加购物车</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>添加购物车接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://127.0.0.1:8000/api/shopcarts/</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>POST </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">goods</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">int</td>
+<td>商品id</td>
+</tr>
+<tr>
+<td style="text-align: left;">nums</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">int</td>
+<td>数量</td>
+</tr>
+</tbody>
+</table>
+<p><strong>输入示例</strong></p>
+<table width='100%' class='codestyle'><pre><code>{
+    "goods": 21,
+    "nums": 2
+}</code></pre></table>
+<p><strong>返回示例</strong></p>
+<table width='100%' class='codestyle'><pre><code>{
+    "goods": 21,
+    "nums": 2
+}</code></pre></table>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul>
+<p>欢迎使用ShowDoc！</p></div><h2>3.3、查改删购物车</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>获取购物车接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://127.0.0.1:8000/api/shopcarts/</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>GET </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Null</td>
+<td style="text-align: left;">Null</td>
+<td style="text-align: left;">Null</td>
+<td>Null</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回示例</strong></p>
+<table width='100%' class='codestyle'><pre><code>[
+    {
+        "goods": {
+            "id": 20,
+            "images": [
+                {
+                    "image": "http://127.0.0.1:8000/media/goods/images/15_P_1448947257324.jpg"
+                },
+                {
+                    "image": "http://127.0.0.1:8000/media/goods/images/15_P_1448947257580.jpg"
+                }
+            ],
+            "add_time": "2019-07-19 10:54",
+            "goods_sn": "",
+            "name": "茅台53度飞天茅台500ml",
+            "click_num": 0,
+            "sold_num": 0,
+            "fav_num": 0,
+            "goods_num": 0,
+            "market_price": 22.0,
+            "shop_price": 18.0,
+            "goods_brief": "",
+            "goods_desc": "<p><img src=\"/media/goods/images/2_20170719161405_249.jpg\" title=\"\" alt=\"2.jpg\"/></p><p><img src=\"/media/goods/images/2_20170719161414_628.jpg\" title=\"\" alt=\"2.jpg\"/></p><p><img src=\"/media/goods/images/2_20170719161435_381.jpg\" title=\"\" alt=\"2.jpg\"/></p>",
+            "ship_free": true,
+            "goods_front_image": "http://127.0.0.1:8000/media/goods/images/15_P_1448947257324.jpg",
+            "is_new": false,
+            "is_hot": false,
+            "category": 30
+        },
+        "nums": 2
+    },
+]</code></pre></table>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>UPDATE  api/shopcarts/{goods_id}/</li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">goods_id</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">int</td>
+<td>商品id</td>
+</tr>
+<tr>
+<td style="text-align: left;">goods</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">int</td>
+<td>商品id</td>
+</tr>
+<tr>
+<td style="text-align: left;">nums</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">int</td>
+<td>数量</td>
+</tr>
+</tbody>
+</table>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>DETELE  api/shopcarts/{goods_id}/</li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">goods_id</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">int</td>
+<td>商品id</td>
+</tr>
+</tbody>
+</table>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul>
+<p>欢迎使用ShowDoc！</p></div><h2>3.4、添加订单</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>添加订单接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://127.0.0.1:8000/api/orders/</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>POST </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">post_script</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">string</td>
+<td>用户留言</td>
+</tr>
+<tr>
+<td style="text-align: left;">order_mount</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">int</td>
+<td>订单金额</td>
+</tr>
+<tr>
+<td style="text-align: left;">address</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>地址</td>
+</tr>
+<tr>
+<td style="text-align: left;">signer_name</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>签收人</td>
+</tr>
+<tr>
+<td style="text-align: left;">singer_mobile</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>联系电话</td>
+</tr>
+</tbody>
+</table>
+<p><strong>输入示例</strong></p>
+<table width='100%' class='codestyle'><pre><code> {
+    "post_script": "",
+    "order_mount": null,
+    "address": "",
+    "signer_name": "",
+    "singer_mobile": ""
+}</code></pre></table>
+<p><strong>返回示例</strong></p>
+<table width='100%' class='codestyle'><pre><code>{
+    "id": 9,
+    "order_sn": "20190731192849123",
+    "trade_no": null,
+    "pay_status": "paying",
+    "pay_time": null,
+    "add_time": "2019-07-31 19-28",
+    "alipay_url": "https://openapi.alipaydev.com/gateway.do?app_id=2016101100659996&biz_content=%7B%22out_trade_no%22%3A%2220190731192849123%22%2C%22subject%22%3A%2220190731192849123%22%2C%22product_code%22%3A%22FAST_INSTANT_TRADE_PAY%22%2C%22total_amount%22%3A10.0%7D&charset=utf-8&method=alipay.trade.page.pay&notify_url=http%3A%2F%2F127.0.0.1%3A8000%2Fapi%2Failpay%2Freturn%2F&return_url=http%3A%2F%2F127.0.0.1%3A8000%2Fapi%2Failpay%2Freturn%2F&sign_type=RSA2&timestamp=2019-07-31+19%3A28%3A49&version=1.0&sign=W9WAmeWqOyJCR3QLZyogsoUO%2FUnSIceGMWc9GUuSnZuCTjkjL3AA14ku4IYhsHvrnMESHgaVtDIrCzeuCdAJxfuB25dwkVD2UVp9Ikl7%2BBcpNgY%2FLPCbcGvn5YCq%2BC0fs8Gl7kL7fyYmXL2trBG9LlZ7rkWavuIPiFCEnEba8uC6EUVpI%2BkPI656N%2FI8DWKnnJAfp6aTvQr5v93Gja%2B70s3F%2Fu7Hi4OH095W3OflNY4pe5YtG3%2FSRkZfMcXiCI%2F33AOESyd8k8Kft5pHrf5LqbU99d4Xot%2BvHuXjNN3GFNjK2qBea9PX4b9ns5aK9icgsKPoFGnHw2XwiCNpOfVP0A%3D%3D",
+    "post_script": "",
+    "order_mount": 10.0,
+    "address": "交通大学院校",
+    "signer_name": "小二",
+    "singer_mobile": "18712341234"
+}</code></pre></table>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul>
+<p>欢迎使用ShowDoc！</p></div></div><h1>4、用户操作user_operation</h1><div style="margin-left:20px;"><h2>4.1、收藏</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>用户收藏接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://127.0.0.1:8000/api/userfavs/</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>POST </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">goods</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">int</td>
+<td>商品id</td>
+</tr>
+</tbody>
+</table>
+<p><strong>输入示例</strong></p>
+<table width='100%' class='codestyle'><pre><code> {
+    "goods": 46,
+}</code></pre></table>
+<p><strong>返回示例</strong></p>
+<table width='100%' class='codestyle'><pre><code> {
+    "goods": 46,
+    "id": 10
+}</code></pre></table>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>GET </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Null</td>
+<td style="text-align: left;">Null</td>
+<td style="text-align: left;">Null</td>
+<td>Null</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回示例</strong></p>
+<table width='100%' class='codestyle'><pre><code>[
+    {
+        "id": 5,
+        "goods": {
+            "id": 53,
+            "images": [
+                {
+                    "image": "http://127.0.0.1:8000/media/mv_EuyL2Mu.jpg"
+                },
+                {
+                    "image": "http://127.0.0.1:8000/media/9_P_1448944791617_TKa4ez7.jpg"
+                }
+            ],
+            "add_time": "2019-07-26 09:05",
+            "goods_sn": "4343",
+            "name": "大豆一号",
+            "click_num": 123,
+            "sold_num": 123,
+            "fav_num": 1,
+            "goods_num": 1782,
+            "market_price": 15.0,
+            "shop_price": 13.0,
+            "goods_brief": "打发时间按客服但是房价快速的范德萨发斯蒂芬多少分三大",
+            "goods_desc": "<p><img src=\"http://127.0.0.1:8000/media/goods/images/2_P_1448945810202_tFI76bj_20190726090622_944.jpg\" title=\"\" alt=\"2_P_1448945810202_tFI76bj.jpg\"/> </p><p><br/> </p><p><img src=\"http://127.0.0.1:8000/media/goods/images/6_P_1448945167279_20190726090633_343.jpg\" title=\"\" alt=\"6_P_1448945167279.jpg\"/> </p>",
+            "ship_free": true,
+            "goods_front_image": "http://127.0.0.1:8000/media/goods/images/8_P_1448945032810_IcRoVtO.jpg",
+            "is_new": false,
+            "is_hot": false,
+            "category": 1
+        },
+        "add_time": "2019-07-29T14:21:41.691964",
+        "user": 4
+    },
+]</code></pre></table>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>DETELE   /api/userfavs/{goods_id}/</li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">goods_id</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">int</td>
+<td>商品id</td>
+</tr>
+</tbody>
+</table>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul>
+<p>欢迎使用ShowDoc！</p></div><h2>4.2、留言</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>用户留言接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://xx.com/api/user/register</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>POST </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">message_type</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">int</td>
+<td>投诉</td>
+</tr>
+<tr>
+<td style="text-align: left;">subject</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>标题</td>
+</tr>
+<tr>
+<td style="text-align: left;">message</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>内容</td>
+</tr>
+<tr>
+<td style="text-align: left;">file</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">string</td>
+<td>图片</td>
+</tr>
+</tbody>
+</table>
+<p><strong>输入示例</strong></p>
+<table width='100%' class='codestyle'><pre><code>{
+    "message_type": 2,
+    "subject": "牛仔质量",
+    "message": "太次一点都不好 掉色  认真评价",
+    "file":点击上传
+}</code></pre></table>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>
+<p>GET </p>
+<p><strong>返回示例</strong></p>
+</li>
+</ul>
+<table width='100%' class='codestyle'><pre><code>{
+    "id": 4,
+    "add_time": "2019-07-31 19:45",
+    "message_type": 2,
+    "subject": "牛仔质量",
+    "message": "太次一点都不好 掉色  认真评价",
+    "file": "http://127.0.0.1:8000/media/message/images/fdjask89sadsf.jpeg"
+}</code></pre></table>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>DELETE    /api/messages/{id}/ </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">id</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">int</td>
+<td>留言id</td>
+</tr>
+</tbody>
+</table>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul>
+<p>欢迎使用ShowDoc！</p></div><h2>4.3、收货地址</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>用户收货地址接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://xx.com/api/user/register</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>POST </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">province</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>省份</td>
+</tr>
+<tr>
+<td style="text-align: left;">city</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>市</td>
+</tr>
+<tr>
+<td style="text-align: left;">district</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>区</td>
+</tr>
+<tr>
+<td style="text-align: left;">address</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>详细地址</td>
+</tr>
+<tr>
+<td style="text-align: left;">signer_name</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>签收人</td>
+</tr>
+<tr>
+<td style="text-align: left;">signer_mobile</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>电话</td>
+</tr>
+</tbody>
+</table>
+<p><strong>输入示例</strong></p>
+<table width='100%' class='codestyle'><pre><code> {
+    "province": "黑龙江",
+    "city": "哈尔滨",
+    "district": "南岗区",
+    "address": "欧洲新城 3单元",
+    "signer_name": "小五",
+    "signer_mobile": "18512341234"
+}</code></pre></table>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>
+<p>GET </p>
+<p><strong>返回示例</strong></p>
+</li>
+</ul>
+<table width='100%' class='codestyle'><pre><code>{
+    "id": 4,
+    "province": "黑龙江",
+    "city": "哈尔滨",
+    "district": "南岗区",
+    "address": "欧洲新城 3单元",
+    "signer_name": "小五",
+    "signer_mobile": "18512341234"
+}</code></pre></table>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>UPDATE  /api/address/{id}/</li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">id</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">int</td>
+<td>地址id</td>
+</tr>
+<tr>
+<td style="text-align: left;">province</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>省份</td>
+</tr>
+<tr>
+<td style="text-align: left;">city</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>市</td>
+</tr>
+<tr>
+<td style="text-align: left;">district</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>区</td>
+</tr>
+<tr>
+<td style="text-align: left;">address</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>详细地址</td>
+</tr>
+<tr>
+<td style="text-align: left;">signer_name</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>签收人</td>
+</tr>
+<tr>
+<td style="text-align: left;">signer_mobile</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>电话</td>
+</tr>
+</tbody>
+</table>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>DETELE  /api/address/{id}/</li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead><tr style='background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);'>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">id</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">int</td>
+<td>地址id</td>
+</tr>
+</tbody>
+</table>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul>
+<p>欢迎使用ShowDoc！</p></div></div></body></html>

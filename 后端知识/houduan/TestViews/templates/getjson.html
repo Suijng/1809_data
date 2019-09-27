@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getjson</title>
+    <script src="/static/js/jquery-1.12.4.min.js"></script>
+
+</head>
+
+<script>
+    $(function () {
+        $('#btn').click(function () {
+            //发送请求
+            $.get('/jasonget/', function (data) {
+                {#alert('hh')#}
+                ele = $('#content')
+                ele.append('<li>' + data['name'] + '</li>')
+                ele.append('<li>' + data['age'] + '</li>')
+            })
+        })
+    })
+</script>
+
+<body>
+
+<button id="btn">获取</button>
+<ul id="content"></ul>
+
+</body>
+</html>

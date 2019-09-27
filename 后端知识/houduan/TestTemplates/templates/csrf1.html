@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>csrf1</title>
+</head>
+<body>
+
+<form action="/csrf1/" method="post">
+
+    <input type="text" name="name">
+
+    <input type="submit" value="提交">
+
+{#    {% csrf_token %} 没有403错误#}
+
+</form>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>奇千小说</title>
+    <style type="text/css">
+
+
+        .da {
+            margin: 0;
+            padding: 0;
+            margin-top: 50px;
+        }
+
+        ul {
+            float: left;
+            list-style-type: none;
+        }
+
+        li {
+            width: 300px;
+            height: 400px;
+            overflow: hidden;
+            float: left;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+
+        .lift {
+            width: 300px;
+            height: 400px;
+            /*margin-top: 150px;*/
+            /*margin-left: 200px;*/
+            background: cornsilk;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2E2D3C;
+        }
+
+        a:hover {
+            color: brown;
+        }
+
+        h1 {
+            background: #f5f5f5;
+        }
+        p{
+            font-size: 13px;
+        }
+        span{
+            {#display: block;#}
+            width: 10px;
+            height: 10px;
+            background: #e7c100;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="top">
+
+</div>
+
+
+<div class="da">
+    <ul>
+        {% for i in category %}
+            <li>
+                <a href="/liebiao/{{ i.id }}"><h1>{{ i.types }}</h1></a>
+                <div class="lift">
+                    {% for article in i.article_set.all %}
+                        <a href="/list"><p> <span>&nbsp {{ forloop.counter }} &nbsp</span> {{ article.title }}</p></a>
+                    {% endfor %}
+                </div>
+            </li>
+        {% endfor %}
+
+    </ul>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>反向解析</title>
+</head>
+<body>
+
+    <h1>反向解析</h1>
+    <a href="/booktest/fan2/">跳转</a>
+    <a href="{% url 'booktest:fan2' %}">跳转</a>
+
+    位置参数:
+    <a href="{% url 'booktest:fan3' 1 2 %}">带位置参数跳转</a>
+    <a href="/booktest/fan3/1_2">带位置参数跳转</a>
+    <br>
+
+    关键字参数:
+    <a href="{% url 'booktest/fan4' num=1 num=2 %}">带关键字参数跳转</a>
+    <br>
+
+    重定向
+    <a href="{% url 'booktest:fan5' 1 2  %}">重定向</a>
+    <br>
+
+</body>
+</html>

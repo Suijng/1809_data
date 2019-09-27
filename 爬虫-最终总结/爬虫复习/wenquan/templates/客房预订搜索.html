@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=0.95, user-scalable=no"/>
+    <title>黄山醉温泉</title>
+    <link href="../static/css/base.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../static/js/jquery-1.8.2.min.js"></script>
+    <!--[if IE 6]><script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+<script type="text/javascript">
+    window.onload = function(){
+        DD_belatedPNG.fix("img, div, a");
+    }
+</script>
+<![endif]-->
+    <!--[if lt IE 9]>
+   <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+{#酒店预定#}
+
+<body>
+<!--HEADER-->
+<div class="header">
+    <div class="mar1000 clearfix">
+        <div class="logo"></div>
+        <div class="header_right">
+            <div class="homeinfo">
+                <label><span>免费预订电话：<strong>400-0559-700</strong></span>&nbsp;&nbsp;&nbsp;&nbsp;|</label>
+                <label><a href="/login/">会员登录</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="/register/">注册</a>&nbsp;&nbsp;&nbsp;&nbsp;|</label>
+                <label><a href="">设为首页</a></label>
+            </div>
+            <div class="nav">
+                <a href="/index/" class="hover">首 页</a>
+                <a href="/order/">温泉预定</a>
+                <a href="/order/">酒店预定</a>
+                <a href="">醉悦旅居</a>
+                <a href="">养生餐饮</a>
+                <a href="">会议中心</a>
+                <a href="">促销活动</a>
+                <a href="">企业文化</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--HEADER-->
+
+
+<!--BIG PIC-->
+<div class="banners">
+    &nbsp;
+</div>
+<!--BIG PIC-->
+
+
+<!--CONTENT-->
+<div class="content">
+    <div class="mar1000 clearfix">
+
+
+        <div class="lefts">
+            <div class="tree">
+                <label>醉温泉度假酒店</label>
+                <a href="" class="hover">醉悦旅居</a>
+                <a href="">促销活动</a>
+                <a href="">促销活动</a>
+            </div>
+        </div>
+        <div class="rights">
+
+            <div class="path path_nomar"><label>酒店预订</label><span>当前位置：首页 &gt; 酒店预订</span></div>
+
+            <!--查询功能-->
+            <div class="search">入住日期：<input type="text" class="input01s">&nbsp;&nbsp;退房日期：<input type="text"
+                                                                                                 class="input01s">&nbsp;&nbsp;<input
+                    type="button" value="开始查询" class="btn01s"></div>
+            <!--查询功能-->
+
+
+            <!--搜索结果-->
+            <div class="home_search_jg">
+                <strong>预订条件：</strong>&nbsp;&nbsp;&nbsp;&nbsp;入住人数：&nbsp;<b>5人</b>&nbsp;&nbsp;&nbsp;&nbsp;入住日期：<b>2014-01-02</b>&nbsp;&nbsp;&nbsp;&nbsp;退房日期
+                ：<b>2014-01-05</b>
+            </div>
+
+            <!--客房预订-->
+            <div class="home_list">
+
+                <!--单元-->
+                {% for i in hourse %}
+                    <div class="dd_list">
+                        <h3>{{ i.big.name }}</h3>
+                        <p>{{ i.big.mianji }}</p>
+                        <div class="dd_list_h">
+                            <img src="{{ i.big.img }}" width="180" height="118"/>
+                            <div class="dd_list_house">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table01">
+                                    <tr class="p">
+                                        <td width="41%">价格名称</td>
+                                        <td width="15%">平均房价</td>
+                                        <td width="15%">早餐</td>
+                                        <td width="15%">支付方式</td>
+                                        <td width="14%">&nbsp;</td>
+                                    </tr>
+
+                                    {% for sub_i in i.small %}
+                                        <tr class="o">
+                                            <td>{{ sub_i.name }}</td>
+                                            <td>{{ sub_i.fangjia }}</td>
+                                            <td>{{ sub_i.beizhu }}</td>
+                                            <td>{{ sub_i.zhifu }}</td>
+                                            <td><a href="/order/yuding/{{ sub_i.id }}/" class="yd">预订</a></td>
+                                        </tr>
+                                    {% endfor %}
+
+                                </table>
+                            </div>
+                            <div class="clears"></div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+<!--CONTENT-->
+
+
+<!--FOOTER-->
+<div class="bottom">
+    <a href="">网站首页</a>|
+    <a href="">温泉预定</a>|
+    <a href="">酒店预定</a>|
+    <a href="">醉悦旅居</a>|
+    <a href="">养生餐饮</a>|
+    <a href="">会议中心</a>|
+    <a href="">促销活动</a>|
+    <a href="">企业文化</a>
+</div>
+<div class="footer">
+    地址：黄山市屯溪区花山路新徽天地醉温泉国际度假城&nbsp;&nbsp;&nbsp;&nbsp;邮编:236010<br/>
+    电话：0559-2536999&nbsp;&nbsp;2568666&nbsp;&nbsp;&nbsp;&nbsp;免费预订电话：400-0559-700<br/>
+    Copyright &copy; 2003-2014 黄山 &middot; 醉温泉&nbsp;&nbsp;All rights reserved.&nbsp;&nbsp;皖ICP备11009137号
+</div>
+<!--FOOTER-->
+</body>
+</html>

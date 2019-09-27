@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b048446c-6105-4dd1-9034-66e896dd3bc3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/mock/mock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/public/1449088788518670880.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/api/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/api/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/axios/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/store/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/store/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/store/mutation-types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/store/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/store/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/app/app.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/cart/cart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/footer/footer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/head/head.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/head/shophead.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/home/home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/index/banners.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/index/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/index/new.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/index/series-list.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/list/current-loc/current-loc.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/list/list-nav/listNav.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/list/list-sort/listSort.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/list/list.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/list/page/page.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/list/price-range/priceRange.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/list/product-list/productList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/login/login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/loginHead/loginHead.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/member/collection.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/member/member-menu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/member/member.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/member/message.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/member/order.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/member/orderDetall.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/member/receive.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/member/userinfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/productDetail/current-loc/current-loc.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/productDetail/hotSales.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/productDetail/model.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/productDetail/productDetail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/src/views/register/register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/static/alipay.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/styles/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/styles/fonts/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/styles/fonts/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/styles/fonts/iconfont.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/styles/fonts/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/styles/fonts/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/styles/fonts/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Projects/lnkfresh/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flask-小程序/xiao-waimai/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../flask-小程序/xiao-waimai/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flask-小程序/xiao-waimai/uwsgi.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../flask-小程序/xiao-waimai/uwsgi.log" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="900366133">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="717" />
+    <option name="y" value="-2" />
+    <option name="width" value="649" />
+    <option name="height" value="763" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="drf_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drf_demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drf_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drf_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drf_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drf_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="drf_demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="drf_demo" type="Python.DjangoServer" factoryName="Django server">
+      <module name="drf_demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b048446c-6105-4dd1-9034-66e896dd3bc3" name="Default Changelist" comment="" />
+      <created>1562599003686</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562599003686</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="51" y="-6" width="1315" height="774" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19324431" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+</project>

@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>搞笑图片_笑话网站模板 AB模板网演示站点 - Www.AdminBuy.Cn</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/static/css/gaoxiao.css"/>
+</head>
+<body>
+
+<div class="header wrapper clearfix">
+    <h1><a title="笑话大全" href="/"><img src="/static/images/logo.png" alt="笑话大全"></a></h1>
+    <div class="search">
+        <form name="formsearch" action="/plus/search.php">
+            <input type="hidden" name="kwtype" value="0"/>
+            <input name="q" type="text" id="search-keyword" class="searchinput" placeholder="笑话"/>
+            <input type="submit" class="searchbutton" value="">
+
+            <input type="hidden" name="searchtype" value="title"/>
+        </form>
+    </div>
+    <div class="ad468">
+
+    </div>
+</div>
+<div class="nav wrapper clearfix">
+
+
+    <a href='/index/' rel='tegaoxiao.html'>笑话大全</a>
+    <a class='first on' href='/img/'>搞笑图片</a>
+
+</div>
+<div class="place wrapper clearfix">
+    <div class="position"><a href='http://127.0.0.1/'>主页</a> > <a href='/img/'>搞笑图片</a> ></div>
+</div>
+<div class="wrapper clearfix">
+    <div class="main">
+        <div class="category clearfix"><a href="/joke/nannv/">爆笑男女</a> <a href="/joke/yuren/">愚人</a> <a
+                href="/joke/gudai/">古代</a> <a href="/joke/mingzhu/">名著爆笑</a> <a href="/joke/it/">IT</a> <a
+                href="/joke/tiyu/">体育</a> <a href="/joke/wangwen/">爆笑网文</a> <a href="/joke/gushi/">故事</a> <a
+                href="/joke/geci/">台词歌词</a> <a href="/joke/yiliao/">医疗</a> <a href="/joke/junshi/">军事</a> <a
+                href="/joke/zongjiao/">宗教</a> <a href="/joke/sifa/">司法</a> <a href="/joke/kongbu/">恐怖</a> <a
+                href="/joke/shehui/">社会</a> <a href="/joke/jiaotong/">交通</a> <a href="/joke/fuqi/">夫妻</a> <a
+                href="/joke/cold/">冷笑话</a> <a href="/joke/haungse/">成人笑话</a> <a href="/joke/youmo/">幽默</a> <a
+                href="/joke/home/">家庭</a> <a href="/joke/ertong/">儿童</a> <a href="/joke/xiaoyuan/">校园</a> <a
+                href="/joke/leiren/">雷人</a> <a href="/joke/qiushi/">糗事</a> <a href="/joke/zhichang/">职场</a> <a
+                href="/joke/dongwu/">动物</a> <a href="/joke/qianming/">爆笑签名</a> <a href="/joke/duanxin/">短信</a> <a
+                href="/joke/guoji/">国际</a></div>
+        {% for image in articles.object_list %}
+            <div class="item">
+                <h3><a href="/picdetail/{{ image.id }}" target="_blank">{{ image.title }}</a></h3>
+                <div class="text">
+                    <p><img src="/static/media/{{ image.img }}" alt="{{ image.title }}" title="{{ image.title }}"></p>
+                </div>
+                <div class="bar clearfix"><a class="read" href="/picdetail/{{ image.id }}" target="_blank">查看全文</a> <a
+                        class="type"
+                        href=""
+                        target="_blank">搞笑图片</a>
+                </div>
+            </div>
+        {% endfor %}
+        <div class="pages">
+            {#            <li>首页</li>#}
+            {% include "_pagination.html" %}
+            {#            <li class="thisclass">1</li>#}
+            {#            <li><a href='list_2_2.html'>2</a></li>#}
+            {#            <li><a href='list_2_2.html'>下一页</a></li>#}
+            {#            <li><a href='list_2_2.html'>末页</a></li>#}
+        </div>
+    </div>
+    <div class="aside">
+        <div class="recommend">
+            <h2>推荐笑话</h2>
+            <ul>
+                {% for top in tops %}
+                    {% if forloop.counter < 16 %}
+                        {% if forloop.counter < 4 %}
+                            <li><em class="n1">{{ forloop.counter }}</em><a href="/picdetail/{{ top.id }}"
+                                                                            target="_blank">{{ top.title }}</a></li>
+                        {% else %}
+                            <li><em>{{ forloop.counter }}</em><a href="/picdetail/{{ top.id }}"
+                                                                 target="_blank">{{ top.title }}</a></li>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+
+            </ul>
+        </div>
+
+        <div class="recommend">
+            <h2>热门笑话</h2>
+            <ul>
+                {% for read_num in read_nums %}
+                    {% if forloop.counter < 16 %}
+                        {% if forloop.counter < 4 %}
+                            <li><em class="n1">{{ forloop.counter }}</em><a href="/picdetail/{{ read_num.id }}"
+                                                                            target="_blank">{{ read_num.title }}</a>
+                            </li>
+                        {% else %}
+                            <li><em>{{ forloop.counter }}</em><a href="/picdetail/{{ read_num.id }}"
+                                                                 target="_blank">{{ read_num.title }}</a></li>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div class="footer"><p><a href="/">AB模板网</a> Copyright &copy; 2002-2011 Www.AdminBuy.Cn. 版权所有</p></div>
+</body>
+</html>

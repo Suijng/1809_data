@@ -1,0 +1,18 @@
+http://10.114.14.249:8002/ 下载视频网址
+
+python3 manage.py createuperuser
+
+在booktest下新建一个urls.py文件
+这里是一个列表 不是集合
+里面写 urlpatterns={
+    url(r'^index/',view.index)
+}
+
+在admin.py下注册你写的额model
+from django.contrib import admin
+from .models import BookInfo,HeroInfo
+
+# Register your models here.
+
+admin.site.register(BookInfo)
+admin.site.register(HeroInfo)

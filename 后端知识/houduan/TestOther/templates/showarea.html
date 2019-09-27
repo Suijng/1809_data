@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>省市区</title>
+    <script src="/static/js/jquery-1.12.4.min.js"></script>
+
+    <script>
+        $(function () {
+            $.get('/getp/',function (d) {
+
+            select = $('#p');
+            $.each(d.data,function (index,data) {
+                select.append('<option value=' + data['id'] + '>' + data['atitle'] + '</option>')
+                })
+            });
+
+
+            //为省select绑定change事件,获取市信息,并添加到市select
+            $('#p').change(function () {
+                $.get('/getc/'+$(this).val(),function (d) {
+                    select=$('#c');//找市
+                    select1=$('#d');//找区
+
+                    select.empty();//清空
+                    select1.empty();
+
+                    select.append('<option value="c">请选择市</option>');
+                    select1.append('<option value="d">请选择区</option>');
+                    $.each(d.data,function (index,data) {
+                        select.append('<option value=' + data['id'] + '>' + data['atitle'] + '</option>')
+                    })
+                })
+            });
+
+
+            //区 县
+            $('#c').change(function () {
+                $.get('/getc/'+$(this).val(),function (d) {
+                    select = $('#d');
+                    select.empty();
+                    $.each(d.data,function (index,data) {
+                        select.append('<option value=' + data['id'] + '>' + data['atitle'] + '</option>')
+                    })
+                })
+            })
+        })
+
+
+    </script>
+
+
+
+
+</head>
+<body>
+
+<select id="p" style="height: 25px;">请选择省
+    <option value="p">请选择省</option>
+</select>
+
+
+<select id="c" style="height: 25px;">请选择市
+    <option value="c">请选择市</option>
+</select>
+
+<select id="d" style="height: 25px;">请选择区
+    <option value="d">请选择区</option>
+
+</select>
+
+
+
+</body>
+</html>

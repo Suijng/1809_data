@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% if name == None %}
+
+    <form action="/login/" method="post">
+
+        <input type="text" name="name" placeholder="请输入用户名">
+        <input type="submit" value="提交">
+
+
+    </form>
+{% else %}
+    欢迎vip:{{ name }} ----<a href="/logout/">退出</a>
+{% endif %}
+
+</body>
+</html>

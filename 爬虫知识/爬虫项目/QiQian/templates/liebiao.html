@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>奇千小说网_全部作品</title>
+    <meta name="description"
+          content="小说阅读,精彩小说尽在起点中文网. 起点中文网提供玄幻小说,武侠小说,原创小说,网游小说,都市小说,言情小说,青春小说,历史小说,军事小说,网游小说,科幻小说,恐怖小说,首发小说,最新章节免费">
+    <meta name="keywords" content="小说,小说网,玄幻小说,武侠小说,都市小说,历史小说,网络小说,言情小说,青春小说,原创网络文学">
+    <meta name="robots" content="all">
+    <meta name="googlebot" content="all">
+    <meta name="baiduspider" content="all">
+    {#    <meta http-equiv="mobile-agent" content="format=wml; url=https://m.qidian.com">#}
+    {#    <meta http-equiv="mobile-agent" content="format=xhtml; url=https://m.qidian.com">#}
+    {#    <meta http-equiv="mobile-agent" content="format=html5; url=http://h5.qidian.com/bookstore.html">#}
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit"/>
+    <script>
+        document.domain = 'qidian.com';
+    </script>
+    <script>
+        var speedTimer = [],
+            speedZero = new Date().getTime();
+    </script>
+
+    <script>
+        //遇到cookie tf=1的话留在本站，否则跳转移动站
+        if (getCookie('tf') != 1) {
+            //判断是以下设备后跳转到m站
+            if (navigator.userAgent.match(/(iPhone|iPod|Android)/i)) {
+                location.href = "//m.qidian.com"
+            }
+        } else {
+            // M站设置了一年，这里fixed
+            setCookie('tf', 1, 'qidian.com', '/', 0);
+        }
+        // start 防劫持
+        //设置cookie
+        function setCookie(name, value, domain, path, expires) {
+            if (expires) {
+                expires = new Date(+new Date() + expires);
+            }
+            var tempcookie = name + '=' + escape(value) +
+                ((expires) ? '; expires=' + expires.toGMTString() : '') +
+                ((path) ? '; path=' + path : '') +
+                ((domain) ? '; domain=' + domain : '');
+            //Ensure the cookie's size is under the limitation
+            if (tempcookie.length < 4096) {
+                document.cookie = tempcookie;
+            }
+        }
+
+        //获取cookie
+        function getCookie(name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+            if (arr = document.cookie.match(reg))
+                return (arr[2]);
+            else
+                return null;
+        }
+
+        //创建并发送请求
+        function createSender(url) {
+            var img = new Image();
+            img.onload = img.onerror = function () {
+                img = null;
+            };
+            img.src = url;
+        }
+    </script>
+    {##}
+    {#<link data-ignore="true" rel="shortcut icon" type="image/x-icon" href="//qidian.gtimg.com/qd/favicon/qd_icon.c443c.ico">#}
+    {#<link data-ignore="true" rel="Bookmark" type="image/x-icon" href="//qidian.gtimg.com/qd/favicon/qd_icon.c443c.ico">#}
+    {##}
+    {##}
+    {##}
+    {#<link rel="stylesheet" data-ignore="true" href="//qidian.gtimg.com/c/=/qd/css/lbfUI/css/Checkbox.ef549.css,/qd/css/reset.ddecf.css,/qd/css/global.d41d8.css,/qd/css/font.089a4.css,/qd/css/header.17852.css,/qd/css/module.e710a.css,/qd/css/list_module.37b81.css,/qd/css/all_finish.82227.css,/qd/css/layout.5de0f.css,/qd/css/qd_popup.7e65f.css,/qd/css/footer.3607a.css,/qd/css/lbfUI/css/ComboBox.8997f.css,/qd/css/lbfUI/css/Button.e5a3e.css" />#}
+
+
+    <link rel="stylesheet" href="/static/css/liebiao.css">
+
+</head>
+<body>
+<div class="share-img">
+    <img src="//qidian.gtimg.com/qd/images/common/share.6aa92.png" width='300' height="300">
+</div>
+
+<div class="wrap">
+    <div class="top-nav" data-l1="1">
+        <div class="box-center cf">
+            <div class="login-box fr">
+                <div class="sign-in hidden">
+                    <span>你好，</span><a class="black" id="user-name" href="#" target="_blank"
+                                       data-eid="qd_A08"></a><em>|</em><a class="black" id="msg-btn"
+                                                                          href="//me.qidian.com/msg/systems.aspx?page=1"
+                                                                          target="_blank" data-eid="qd_A09">消息<cite
+                        id="msg-box">(<i></i>)</cite></a><em>|</em><a id="exit-btn" href="javascript:"
+                                                                      data-eid="qd_A10">退出</a>
+                </div>
+                <div class="sign-out">
+                    <a id="login-btn" class="black" href="javascript:" data-eid="qd_A06">登录</a><em>|</em><a id="reg-btn"
+                                                                                                            href="#"
+                                                                                                            target="_blank"
+                                                                                                            data-eid="qd_A07">注册</a>
+                </div>
+            </div>
+            <div class="nav-link fl">
+                <a class="act" href="#" data-eid="qd_A01">奇千中文网</a>
+                <a href="#" target="_blank" data-eid="qd_A02">奇千女生网</a><em>|</em>
+                <a href="#" target="_blank" data-eid="qd_A03">创世中文网</a><em>|</em>
+                <a href="#" target="_blank" data-eid="qd_A04">云起书院</a><em>|</em>
+
+                <a href="javascript:" id="switchEl" data-eid="qd_A182">繁体版</a>
+                <!--<em>|</em>
+                <a class="black" id="back-old" href="javascript:" data-eid="qd_A05">返回旧版</a>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="top-op-box" id="j-topOpBox"></div>
+
+    <div class="logo-wrap box-center" data-l1="2">
+        <div class="box-center cf">
+            <div class="book-shelf fr">
+                <a href="#" data-eid="qd_A14"><em class="iconfont shelf">&#xe60c;</em><i>我的书架</i>
+                </a>
+            </div>
+            <div class="logo fl">
+                <a href="#" data-eid="qd_A11"></a>
+            </div>
+            <div class="search-wrap fl">
+                <form id="formUrl" action="#" method="get" target="_blank">
+                    <p><input class="search-box" id="s-box" name="kw" type="text" placeholder="恶魔就在身边"></p>
+                    <input class="submit-input" type="submit" id="searchSubmit" data-eid="qd_A13">
+                    <label id="search-btn" class="search-btn" for="searchSubmit"><em class="iconfont" data-eid="qd_A13">
+                        &#xe60d;</em></label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-nav-wrap" data-l1="3">
+        <div class="main-nav box-center cf" id="type-hover">
+
+
+            <ul>
+                <li class="first"><b><strong></strong></b><span><em>
+                <i></i>
+                <i></i>
+                <i></i>
+            </em>作品分类</span>
+                </li>
+                <li class="nav-li"><a href="#" data-eid="qd_A15" class=act>全部作品</a></li>
+                <li class="nav-li"><a href="#" data-eid="qd_A16">排行</a></li>
+                <li class="nav-li"><a href="#" data-eid="qd_A17">完本</a></li>
+                <li class="nav-li"><a href="#" data-eid="qd_A18">免费</a></li>
+                <li class="nav-li"><a href="#" target="_blank" data-eid="qd_A19">作家专区</a>
+                </li>
+                <li class="nav-li"><a href="#" target="_blank" data-eid="qd_A20"><b
+                        class="iconfont client">&#xe604;</b>客户端</a>
+                </li>
+                <li class="game phone" id="game-phone">
+                    <a class="phone-game" href="#" target="_blank" data-eid="qd_A22"><b
+                            class="iconfont webgame">
+                        &#xe630;</b>手游</a>
+                </li>
+                <li class="game web" id="game-web">
+                    <a class="web-game" href="#" target="_blank" data-eid="qd_A21"><b
+                            class="iconfont">
+                        &#xe60b;</b>页游</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="all-pro-wrap box-center cf">
+        <div class="range-sidebar fl" data-l1="4">
+
+            <div class="select-list">
+                <div class="work-filter type-filter" data-l2="3">
+                    <h3>分类</h3>
+                    <ul class="row-1" type="category">
+{#                        {% for i in category %}#}
+                            <li data-id="-1" class="">
+                                <a href="/inde" data-eid="qd_B17">{{ i.types }}</a>
+                            </li>
+{#                        {% endfor %}#}
+                    </ul>
+
+                    {#                        <li data-id="21" class=""><a#}
+                    {#                                href="#"#}
+                    {#                                data-eid="qd_B18">玄幻<cite><i></i></cite></a></li>#}
+                    {##}
+                    {#                        <li data-id="1" class=""><a#}
+                    {#                                href="#"#}
+                    {#                                data-eid="qd_B19">奇幻<cite><i></i></cite></a></li>#}
+                    {##}
+                    {#                        <li data-id="2-机试" class="act arrow"><a#}
+                    {#                                href="#"#}
+                    {#                                data-eid="qd_B20">武侠<cite><i></i></cite></a></li>#}
+                    {##}
+                    {#                        <li data-id="22" class=""><a#}
+                    {#                                href="#"#}
+                    {#                                data-eid="qd_B21">仙侠<cite><i></i></cite></a></li>#}
+
+                    {#                    </ul>#}
+                    {##}
+                    {#                    <ul class="row-2-机试" type="category">#}
+                    {##}
+                    {#                        <li data-id="4" class=""><a#}
+                    {#                                href="#"#}
+                    {#                                data-eid="qd_B22">都市<cite><i></i></cite></a></li>#}
+                    {##}
+                    {#                        <li data-id="15" class=""><a#}
+                    {#                                href="#"#}
+                    {#                                data-eid="qd_B23">现实<cite><i></i></cite></a></li>#}
+                    {##}
+                    {#                        <li data-id="6" class=""><a#}
+                    {#                                href="#"#}
+                    {#                                data-eid="qd_B24">军事<cite><i></i></cite></a></li>#}
+                    {##}
+                    {#                        <li data-id="5" class=""><a#}
+                    {#                                href="#"#}
+                    {#                                data-eid="qd_B25">历史<cite><i></i></cite></a></li>#}
+                    {##}
+                    {#                        <li data-id="7" class=""><a#}
+                    {#                                href="#"#}
+                    {#                                data-eid="qd_B26">游戏<cite><i></i></cite></a></li>#}
+                    {##}
+                    {#                    </ul>#}
+                    {##}
+                    {#                    <ul class="row-3" type="category">#}
+                    {##}
+                    {#                        <li data-id="8" class=""><a#}
+                    {#                                href="#"#}
+                    {#                                data-eid="qd_B27">体育<cite><i></i></cite></a></li>#}
+                    {##}
+                    {#                        <li data-id="9" class=""><a#}
+                    {#                                href="#"#}
+                    {#                                data-eid="qd_B28">科幻<cite><i></i></cite></a></li>#}
+                    {##}
+                    {#                        <li data-id="10" class=""><a#}
+                    {#                                href="#"#}
+                    {#                                data-eid="qd_B29">灵异<cite><i></i></cite></a></li>#}
+                    {##}
+                    {#                        <li data-id="12" class=""><a#}
+                    {#                                href="#"#}
+                    {#                                data-eid="qd_B30">二次元<cite><i></i></cite></a></li>#}
+                    {##}
+                    {#                        <li data-id="20076" class=""><a#}
+                    {#                                href="#"#}
+                    {#                                data-eid="qd_B70">短篇<cite><i></i></cite></a></li>#}
+                    {##}
+                    {#                    </ul>#}
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="main-content-wrap fl" data-l1="5">
+
+            <div class="tool-bar cf">
+                <div class="view-mode" id="view-mode">
+                    <a id="img-text" class="iconfont act"
+                       href="#"
+                       data-eid="qd_B54">&#xe618;</a><em>|</em><a id="only-text" class="iconfont  "
+                                                                  href="#"
+                                                                  data-eid="qd_B55">&#xe61a;</a>
+                </div>
+                <div class="select-wrap">
+
+                    <a data-id="" class=act
+                       href="#"
+                       data-eid="qd_B62">人气排序<cite class="iconfont">&#xe625;</cite></a>
+                    <a data-id="5"
+                       href="#"
+                       data-eid="qd_B49">更新时间</a>
+                    <a data-id="11"
+                       href="#"
+                       data-eid="qd_B80">总收藏</a>
+                    <a data-id="3"
+                       href="#"
+                       data-eid="qd_B52">总字数</a>
+                    <em>|</em>
+                    <span class="lbf-checkbox get-new-book " data-eid="qd_B53">
+                                    <input id="only" type="checkbox"/>
+                                </span>
+                    <div class="sort-count count-info" id="sort-count">
+{#                        {% for i in category %}#}
+                            <div class="count-text">{{ i.types }}</div>
+{#                        {% endfor %}#}
+                        <div class="yiwen" id="yiwen">
+                            <div class="iconfont">&#xe620;</div>
+                        </div>
+                        <i>|</i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="all-book-list">
+
+                <div class="book-img-text">
+                    <ul class="all-img-list cf">
+{#                        {% for i in category %}#}
+                            {% for article in category.article_set.all %}
+                                <li data-rid="1">
+                                    <div class="book-img-box">
+                                        <a href="#" data-bid="1010968945" data-eid="qd_B57"
+                                           target="_blank"><img
+                                                src="//bookcover.yuewen.com/qdbimg/349573/1010968945/150"></a>
+                                    </div>
+                                    <div class="book-mid-info">
+                                        <h4><a href="/list" target="_blank" data-eid="qd_B58"
+                                               data-bid="1010968945">{{ category.types }}~{{ article.title }}</a></h4>
+
+                                        <p class="author">
+                                            <img src="//qidian.gtimg.com/qd/images/ico/user.f22d3.png"><a class="name"
+                                                                                                          href="#"
+                                                                                                          data-eid="qd_B59"
+                                                                                                          target="_blank">封七月</a><em>|</em><a
+                                                href="#" target="_blank"
+                                                data-eid="qd_B60">武侠</a><i>&#183;</i><a class="go-sub-type"
+                                                                                        data-typeid="2"
+                                                                                        data-subtypeid="30"
+                                                                                        href="javascript:"
+                                                                                        data-eid="qd_B61">武侠幻想</a><em>|</em><span>连载中</span>
+
+                                        </p>
+                                        {#                                <p class="intro">#}
+                                        {#                                    意外身亡，楚休发现自己竟然穿越到了游戏世界《大江湖》当中，成为了游戏中还没成长起来的，第三版的最终反派大boss，祸乱江湖的魔教教主！《大江湖》当中融汇无数武侠背景，有东岛之王天子望气，谈笑杀人。有丐#}
+                                        {#                                </p>#}
+                                        {#                                <p class="update"><span><style>@font-face {#}
+                                        {#                                    font-family: MSeQtTrx;#}
+                                        {#                                    src: url('https://qidian.gtimg.com/qd_anti_spider/MSeQtTrx.eot?') format('eot');#}
+                                        {#                                    src: url('https://qidian.gtimg.com/qd_anti_spider/MSeQtTrx.woff') format('woff'), url('#') format('truetype');#}
+                                        {#                                }#}
+                                        {##}
+                                        {#                                .MSeQtTrx {#}
+                                        {#                                    font-family: 'MSeQtTrx' !important;#}
+                                        {#                                    display: initial !important;#}
+                                        {#                                    color: inherit !important;#}
+                                        {#                                    vertical-align: initial !important;#}
+                                        {#                                }</style><span#}
+                                        {#                                        class="MSeQtTrx">&#100395;&#100399;&#100388;&#100391;&#100394;&#100393;</span>万字</span>#}
+                                        {##}
+                                        {#                                </p>#}
+                                    </div>
+                                </li>
+                            {% endfor %}
+{#                        {% endfor %}#}
+
+
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="page-box cf">
+                <div class="pagination fr" data-eid="qd_C44" id="page-container" data-pageMax="1831" data-page="1">
+
+
+                    <div class="lbf-pagination">
+                        <ul class="lbf-pagination-item-list">
+
+                            <li class="lbf-pagination-item"><a href="javascript:;"
+                                                               class="lbf-pagination-prev lbf-pagination-disabled">&lt;</a>
+                            </li>
+
+                            <li class="lbf-pagination-item"><a data-page="1"
+                                                               href="#"
+                                                               class="lbf-pagination-page  lbf-pagination-current">1</a>
+                            </li>
+
+                            <li class="lbf-pagination-item"><a
+                                    href="#"
+                                    class="lbf-pagination-next ">&gt;</a></li>
+
+                        </ul>
+                        <script>
+                            function PAGINATION_goInput() {
+                                function setParam(param, paramVal, url) {
+                                    if (!url) {
+                                        url = "javascript:;";
+                                        return url
+                                    }
+                                    var theAnchor = null;
+                                    var newAdditionalURL = "";
+                                    var tempArray = url.split("?");
+                                    var baseURL = tempArray[0];
+                                    var additionalURL = tempArray[1];
+                                    var temp = "";
+                                    if (additionalURL) {
+                                        var tmpAnchor = additionalURL.split("#");
+                                        var TheParams = tmpAnchor[0];
+                                        theAnchor = tmpAnchor[1];
+                                        if (theAnchor) additionalURL = TheParams;
+                                        tempArray = additionalURL.split("&");
+                                        for (o = 0; o < tempArray.length; o++) {
+                                            if (tempArray[o].split("=")[0] != param) {
+                                                newAdditionalURL += temp + tempArray[o];
+                                                temp = "&"
+                                            }
+                                        }
+                                    } else {
+                                        var tmpAnchor = baseURL.split("#");
+                                        var TheParams = tmpAnchor[0];
+                                        theAnchor = tmpAnchor[1];
+                                        if (TheParams) baseURL = TheParams
+                                    }
+                                    if (theAnchor) paramVal += "#" + theAnchor;
+                                    var rowsTxt = temp + "" + param + "=" + paramVal;
+                                    return "//www.qidian.com/all" + "?" + newAdditionalURL + rowsTxt
+                                };location.href = setParam("page", document.getElementById("PAGINATION-INPUT").value, location.href)
+                            }
+                        </script>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="box-center cf">
+            <div class="friend-link">
+                <em><a class="yuewen" href="" target="_blank">阅文集团</a><cite>旗下网站：</cite></em>
+                <a href="#">起点中文网</a>
+                <a href="#" target="_blank">奇千女生网</a>
+                <a href="#" target="_blank">创世中文网</a>
+                <a href="#" target="_blank">云起书院</a>
+                <!--<a href="http://www.rongshuxia.com" target="_blank">榕树下</a>-->
+                <a href="#" target="_blank">红袖添香</a>
+                <a href="#" target="_blank">小说阅读网</a>
+                <a href="#" target="_blank">言情小说吧</a>
+                <a href="#" target="_blank">潇湘书院</a>
+                <a href="#" target="_blank">天方听书网</a>
+                <a href="#" target="_blank">懒人听书</a>
+                <a href="#" target="_blank">阅文悦读</a>
+                <a href="#" target="_blank">QQ阅读</a>
+                <a href="#" target="_blank">起点读书</a>
+                <a href="#" target="_blank">作家助手</a>
+                <a href="#" target="_blank" title="Qidian International">起点国际版</a>
+            </div>
+            <div class="footer-menu dib-wrap">
+                <a href="#" target="_blank">关于起点</a>
+                <a href="#" target="_blank">联系我们</a>
+                <a href="#" target="_blank">加入我们</a>
+                <a href="#" target="_blank">帮助中心</a>
+                <a href="#" class="advice" target="_blank">提交建议</a>
+                <!--<a href="http://bbs.qidian.com" target="_blank">起点论坛</a>-->
+                <!--<a href="http://comic.qidian.com" target="_blank">动漫频道</a>-->
+                <a href="#" target="_blank">举报中心</a>
+            </div>
+            <div class="copy-right">
+                <p><span>Copyright &copy; 2002-2019 www.qidian.com All Rights Reserved</span>版权所有 上海玄霆娱乐信息科技有限公司</p>
+                <p>上海玄霆娱乐信息科技有限公司
+                    <a href="#" target="_blank" style="color:#666;margin-left: 5px">增值电信业务经营许可证沪B2-20080046</a>
+                    出版经营许可证 新出发沪批字第U3718号 沪网文[2015]0081-031 新出网证（沪）字010
+                    <a href="#" target="_blank" style="color:#666;margin-left: 5px">沪ICP备08017520号-1</a>
+                </p>
+                <p>请所有作者发布作品时务必遵守国家互联网信息管理办法规定，我们拒绝任何色情小说，一经发现，即作删除！举报电话：010-59357051</p>
+                <p>本站所收录的作品、社区话题、用户评论、用户上传内容或图片等均属用户个人行为。如前述内容侵害您的权益，欢迎举报投诉，一经核实，立即删除，本站不承担任何责任</p>
+                <p>联系方式 总机 021-61870500 地址：中国（上海）自由贸易试验区碧波路690号6号楼101、201室</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<script>
+    // 全局的通用数据都放g_data变量里
+    var g_data = {};
+    g_data.adBanner = {
+        adTop: {
+            "title": "",
+            "adImgUrl": "//qidian.qpic.cn/qidian_common/349573/db6ee24dc12adbea74ac9d3410de0105/0",
+            "adCategoryName": "广告",
+            "colorType": 0,
+            "type": 1,
+            "isAdv": 1,
+            "adJumpUrl": "http://cpgame.qd.game.qidian.com/Home/Index/directLogin/name/bjsg/way/1?qd_game_key=bjsg1200x60&qd_dd_p1=1182",
+            "hasAd": 1
+        },
+    };
+    if (g_data.adBanner.adTop) {
+        g_data.adBanner.adTop.eid = 'qd_B83'
+    }
+    // 环境变量，会按照环境选择性打log
+    g_data.envType = 'pro';
+    // 用作统计PV
+    g_data.pageId = 'qd_P_all';
+    //当前查询的参数
+    var params = {};
+    params.typeId = '2';
+    params.subTypeId = '-1';
+    params.actionId = '-1';
+    params.vipId = '-1';
+    params.sizeId = '-1';
+    params.signId = '-1';
+    params.tagName = '-1';
+    params.orderId = '&#34;&#34;';
+    params.newIn3Month = '-1';
+    params.showId = '1';
+    params.updateId = '-1';
+    g_data.params = params;
+    //当前页面路由
+    g_data.url = '//www.qidian.com/all';
+    // 域名环境变量
+    g_data.domainSearch = 'www.qidian.com/search';
+    //环境域名
+    g_data.domainPreFix = '';
+</script>
+<script data-ignore="true" src="//qidian.gtimg.com/lbf/1.1.0/LBF.js?max_age=31536000"></script>
+<script>
+    // LBF 配置
+    LBF.config({
+        "paths": {
+            "site": "//qidian.gtimg.com/qd/js",
+            "qd": "//qidian.gtimg.com/qd",
+            "common": "//qidian.gtimg.com/common/1.0.0"
+        }, "vars": {"theme": "//qidian.gtimg.com/qd/css"}, "combo": true, "debug": false
+    });
+    LBF.use(['lib.jQuery'], function ($) {
+        window.$ = $;
+    });
+</script>
+<script>
+    LBF.use(['monitor.SpeedReport', 'qd/js/component/login.a4de6.js', 'qd/js/all_finish_free/common.f6b49.js'], function (SpeedReport, Login, Index) {
+        // 页面逻辑入口
+        if (Login) {
+            Login.init().always(function () {
+                Index && typeof Index === 'function' && new Index();
+            })
+        }
+        if (219 && 219 != '') {
+            $(window).on('load.speedReport', function () {
+                // speedTimer[onload]
+                speedTimer.push(new Date().getTime());
+                var f1 = 7718, // china reading limited's ID
+                    f2 = 219, // site ID
+                    f3 = 10; // page ID
+                // chrome & IE9 Performance API
+                SpeedReport.reportPerformance({
+                    flag1: f1,
+                    flag2: f2,
+                    flag3IE: f3,
+                    flag3Chrome: f3,
+                    rate: 0.1,
+                    url: '//isdspeed.qidian.com/cgi-bin/r.cgi'
+                });
+                // common speedTimer:['dom ready', 'onload']
+                var speedReport = SpeedReport.create({
+                    flag1: f1,
+                    flag2: f2,
+                    flag3: f3,
+                    start: speedZero,
+                    rate: 0.1,
+                    url: '//isdspeed.qidian.com/cgi-bin/r.cgi'
+                });
+                // chrome & IE9 Performance API range 1~19, common speedTimer use 20+
+                for (var i = 0; i < speedTimer.length; i++) {
+                    speedReport.add(speedTimer[i], i + 20)
+                }
+                // http://isdspeed.qq.com/cgi-bin/r.cgi?flag1=7718&flag2=224&flag3=1&1=38&2=38&…
+                speedReport.send();
+            })
+        }
+    });
+    speedTimer.push(new Date().getTime());
+</script>
+
+<script>
+    var _mtac = {};
+    (function () {
+        var mta = document.createElement("script");
+        mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.2";
+        mta.setAttribute("name", "MTAH5");
+        mta.setAttribute("sid", "500451537");
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(mta, s);
+    })();
+</script>
+
+</body>
+</html>

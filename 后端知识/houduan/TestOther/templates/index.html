@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>静态</title>
+</head>
+<body>
+
+    静态图片: <br>
+    <img src="/static/images/dongtu.gif" alt="">
+    <br>
+
+    动态图片: <br>
+    {% load static from staticfiles %}
+    <img src="{%static "images/xgou.jpeg"%}" alt="">
+
+
+</body>
+</html>

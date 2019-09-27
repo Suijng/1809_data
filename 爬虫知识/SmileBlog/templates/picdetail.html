@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>你们是练体操的吧，高难度_笑话网站模板 AB模板网演示站点 - Www.AdminBuy.Cn</title>
+    <meta name="keywords" content="你们,是,练,体操,的,吧,高难度,"/>
+    <meta name="description" content=""/>
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/static/css/gaoxiao.css"/>
+    <script language="javascript" type="text/javascript" src="/static//include/dedeajax2.js"></script>
+    <script language="javascript" type="text/javascript">
+        <!--
+        function CheckLogin() {
+            var taget_obj = document.getElementById('_ajax_feedback');
+            myajax = new DedeAjax(taget_obj, false, false, '', '', '');
+            myajax.SendGet2("/member/ajax_feedback.php");
+            DedeXHTTP = null;
+        }
+
+        function postBadGood(ftype, fid) {
+            var taget_obj = document.getElementById(ftype + fid);
+            var saveid = GetCookie('badgoodid');
+            if (saveid != null) {
+                var saveids = saveid.split(',');
+                var hasid = false;
+                saveid = '';
+                j = 1;
+                for (i = saveids.length - 1; i >= 0; i--) {
+                    if (saveids[i] == fid && hasid) continue;
+                    else {
+                        if (saveids[i] == fid && !hasid) hasid = true;
+                        saveid += (saveid == '' ? saveids[i] : ',' + saveids[i]);
+                        j++;
+                        if (j == 10 && hasid) break;
+                        if (j == 9 && !hasid) break;
+                    }
+                }
+                if (hasid) {
+                    alert('您刚才已表决过了喔！');
+                    return false;
+                }
+                else saveid += ',' + fid;
+                SetCookie('badgoodid', saveid, 1);
+            }
+            else {
+                SetCookie('badgoodid', fid, 1);
+            }
+            myajax = new DedeAjax(taget_obj, false, false, '', '', '');
+            myajax.SendGet2("/plus/feedback.php?aid=" + fid + "&action=" + ftype + "&fid=" + fid);
+        }
+
+        function postDigg(ftype, aid) {
+            var taget_obj = document.getElementById('newdigg');
+            var saveid = GetCookie('diggid');
+            if (saveid != null) {
+                var saveids = saveid.split(',');
+                var hasid = false;
+                saveid = '';
+                j = 1;
+                for (i = saveids.length - 1; i >= 0; i--) {
+                    if (saveids[i] == aid && hasid) continue;
+                    else {
+                        if (saveids[i] == aid && !hasid) hasid = true;
+                        saveid += (saveid == '' ? saveids[i] : ',' + saveids[i]);
+                        j++;
+                        if (j == 20 && hasid) break;
+                        if (j == 19 && !hasid) break;
+                    }
+                }
+                if (hasid) {
+                    alert("您已经顶过该帖，请不要重复顶帖 ！");
+                    return;
+                }
+                else saveid += ',' + aid;
+                SetCookie('diggid', saveid, 1);
+            }
+            else {
+                SetCookie('diggid', aid, 1);
+            }
+            myajax = new DedeAjax(taget_obj, false, false, '', '', '');
+            var url = "/plus/digg_ajax.php?action=" + ftype + "&id=" + aid;
+            myajax.SendGet2(url);
+        }
+
+        function getDigg(aid) {
+            var taget_obj = document.getElementById('newdigg');
+            myajax = new DedeAjax(taget_obj, false, false, '', '', '');
+            myajax.SendGet2("/plus/digg_ajax.php?id=" + aid);
+            DedeXHTTP = null;
+        }
+
+        -->
+    </script>
+</head>
+<body>
+<div class="header wrapper clearfix">
+    <h1><a title="笑话大全" href="/"><img src="/static/images/logo.png" alt="笑话大全"></a></h1>
+    <div class="search">
+        <form name="formsearch" action="/plus/search.php">
+            <input type="hidden" name="kwtype" value="0"/>
+            <input name="q" type="text" id="search-keyword" class="searchinput" placeholder="笑话"/>
+            <input type="submit" class="searchbutton" value="">
+
+            <input type="hidden" name="searchtype" value="title"/>
+        </form>
+    </div>
+    <div class="ad468">
+
+    </div>
+</div>
+<div class="nav wrapper clearfix">
+
+
+    <a href='/index/' rel='text.html'>笑话大全</a>
+    <a class='first on' href='/img/'>搞笑图片</a>
+
+</div>
+<div class="place wrapper clearfix">
+    <div class="position"><a href='http://127.0.0.2/'>主页</a> > <a href='/pic/'>搞笑图片</a> ></div>
+</div>
+<div class="wrapper clearfix">
+    <div class="main">
+        <div class="article">
+            <div class="tit">
+                <div class="prenext clearfix"><a class="prev" href="/pic/115.html">上一篇笑话</a> <a class="next" href="">下一篇笑话</a>
+                </div>
+                <h1>{{ image.title }}</h1>
+            </div>
+            <div class="text">
+                <div style="text-align: center;">
+                    <img alt="{{ image.title }}" src="/static/media/{{ image.img }}"
+                         style="width: 600px; height: 333px;"/></div>
+            </div>
+            <div class="newdigg" id="newdigg">
+                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';"
+                     onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',116)">
+                    <div class="digg_act">顶一下</div>
+                    <div class="digg_num">(0)</div>
+                    <div class="digg_percent">
+                        <div class="digg_percent_bar"><span style="width:0%"></span></div>
+                        <div class="digg_percent_num">0%</div>
+                    </div>
+                </div>
+                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';"
+                     onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',116)">
+                    <div class="digg_act">踩一下</div>
+                    <div class="digg_num">(0)</div>
+                    <div class="digg_percent">
+                        <div class="digg_percent_bar"><span style="width:0%"></span></div>
+                        <div class="digg_percent_num">0%</div>
+                    </div>
+                </div>
+            </div>
+            <script language="javascript" type="text/javascript">getDigg(116);</script>
+            <div class="updown clearfix"><span id="next">上一篇：<a href='/pic/115.html'>谁说偶长的是狼尾巴</a> </span> <span
+                    id="pre">下一篇：没有了 </span></div>
+        </div>
+        <div class="relative clearfix">
+            <h2>相关笑话</h2>
+            <ul class="clearfix">
+
+                {% for top in tops %}
+                    {% if forloop.counter < 7 %}
+                        <li><a href='/picdetail/{{ top.id }}'>{{ top.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+
+            </ul>
+        </div>
+        <div class="ad640 clearfix">
+            <a href="#"><img src="http://demo13.adminbuy.cn/style/images/ad3.jpg"></a>
+        </div>
+        <div class="category clearfix"></div>
+    </div>
+    <div class="aside">
+        <div class="recommend">
+            <h2>推荐笑话</h2>
+            <ul>
+                {% for top in tops %}
+                    {% if forloop.counter < 16 %}
+                        {% if forloop.counter < 4 %}
+                            <li><em class="n1">{{ forloop.counter }}</em><a href="/picdetail/{{ top.id }}"
+                                                                            target="_blank">{{ top.title }}</a></li>
+                        {% else %}
+                            <li><em>{{ forloop.counter }}</em><a href="/picdetail/{{ top.id }}"
+                                                                 target="_blank">{{ top.title }}</a></li>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+
+
+            </ul>
+        </div>
+        <div class="recommend">
+            <h2>热门笑话</h2>
+            <ul>
+                {% for read_num in read_nums %}
+                    {% if forloop.counter < 16 %}
+                        {% if forloop.counter < 4 %}
+                            <li><em class="n1">{{ forloop.counter }}</em><a href="/picdetail/{{ read_num.id }}"
+                                                                            target="_blank">{{ read_num.title }}</a>
+                            </li>
+                        {% else %}
+
+                            <li><em>{{ forloop.counter }}</em><a href="/picdetail/{{ read_num.id }}"
+                                                                 target="_blank">{{ read_num.title }}</a></li>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="index wrapper clearfix">
+    <div class="tit"><a class="more" href="/pic/">更多»</a>
+        <h2><a href="/pic/">搞笑图片</a></h2>
+    </div>
+    <div class="pic clearfix">
+        <a target="_blank" href="/pic/116.html">
+            <img alt="你们是练体操的吧，高难度" src="http://demo13.adminbuy.cn/uploads/allimg/150410/1-150410110413Q1-lp.jpg">
+            <span>你们是练体操的吧，高难度</span>
+        </a>
+        <a target="_blank" href="/pic/115.html">
+            <img alt="谁说偶长的是狼尾巴" src="http://demo13.adminbuy.cn/uploads/allimg/150410/1-150410110345M3-lp.jpg">
+            <span>谁说偶长的是狼尾巴</span>
+        </a>
+        <a target="_blank" href="/pic/114.html">
+            <img alt="喜庆的画面" src="http://demo13.adminbuy.cn/uploads/allimg/150410/1-150410110323402-lp.jpg">
+            <span>喜庆的画面</span>
+        </a>
+        <a target="_blank" href="/pic/113.html">
+            <img alt="巅峰对决" src="http://demo13.adminbuy.cn/uploads/allimg/150410/1-150410110259A7-lp.jpg">
+            <span>巅峰对决</span>
+        </a>
+        <a target="_blank" href="/pic/112.html">
+            <img alt="待你长发及腰给我做身衣服可" src="http://demo13.adminbuy.cn/uploads/allimg/150410/1-150410110240b0-lp.jpg">
+            <span>待你长发及腰给我做身衣服可</span>
+        </a>
+        <a target="_blank" href="/pic/111.html">
+            <img alt="不敢直视的衣服" src="http://demo13.adminbuy.cn/uploads/allimg/150410/1-15041011015Wa-lp.jpg">
+            <span>不敢直视的衣服</span>
+        </a>
+        <a target="_blank" href="/pic/110.html">
+            <img alt="轮胎的娇贵" src="http://demo13.adminbuy.cn/uploads/allimg/150410/1-150410110140217-lp.jpg">
+            <span>轮胎的娇贵</span>
+        </a>
+        <a target="_blank" href="/pic/109.html">
+            <img alt="站好了，我带你们去玩" src="http://demo13.adminbuy.cn/uploads/allimg/150410/1-150410110110b5-lp.jpg">
+            <span>站好了，我带你们去玩</span>
+        </a>
+
+    </div>
+</div>
+<div class="footer"><p><a href="/">AB模板网</a> Copyright &copy; 2002-2011 Www.AdminBuy.Cn. 版权所有</p></div>
+</body>
+</html>

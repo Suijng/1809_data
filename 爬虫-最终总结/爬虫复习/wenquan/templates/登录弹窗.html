@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=0.95, user-scalable=no"/>
+    <title>登录弹窗</title>
+    <link rel="stylesheet" href="../static/css/base.css" type="text/css"/>
+    <script src="../static/js/jquery-1.8.2.min.js" language="javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#username').focus();
+            $("#achangeccode").click(function (event) {
+                $("#imgvcode").attr("src", "verifycode.aspx?" + Math.random());
+            });
+
+            $('#txtVCode').bind({
+                focus: function () {
+                    $('.msg_dx').fadeIn(200);
+                }, blur: function () {
+                    $('.msg_dx').fadeOut(200);
+                }
+            })
+
+        });
+
+         $(function(){
+            $("#LonginSubmit").click(function(){
+                $(".m_r_frm").submit();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+<form class="m_r_frm" method="POST">
+    <div class="msg_dx"> 不区分大小写</div>
+    <p><span>账户名</span><em>
+        <input name="username" type="text" id="username" class="input1"/>
+    </em></p>
+    <p><span>密　码</span><em>
+        <input name="password" type="password" id="password" class="input1"/>
+    </em></p>
+
+
+    <p style=" line-height:35px;">
+        <em>
+            <i>
+                <input onclick="__doPostBack('LonginSubmit','')" name="LonginSubmit" type="button" id="LonginSubmit"
+                       class="sub1" onmousedown="doSomething()"/>
+            </i>
+{#            <strong>#}
+{#                <input name="" type="button" class="sub2" value="" onclick="parent.location.href='/register/'"/>#}
+{#            </strong>#}
+            <!--<b><a href="#">找回密码？</a></b>-->
+        </em>
+    </p>
+    {% csrf_token %}
+</form>
+</body>
+</html>

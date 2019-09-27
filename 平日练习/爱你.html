@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>css画桃心</title>
+    <style media="screen">
+    .heart-body {
+        width: 200px;
+        margin: 200px auto;
+        position: relative;
+    }
+
+    .heart-shape {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: #f70e0e;
+        -webkit-transform: rotate(45deg);
+        /* Safari 和 Chrome */
+        -moz-transform: rotate(45deg);
+        /* Firefox */
+        -ms-transform: rotate(45deg);
+        /* IE 9 */
+        -o-transform: rotate(45deg);
+        /* Opera */
+        transform: rotate(45deg);
+    }
+
+    /* 围绕heart-body画2个正方形，大小和heart-body一致 */
+    .heart-shape:before,
+    .heart-shape:after {
+        position: absolute;
+        content: '';
+        width: 200px;
+        height: 200px;
+        -webkit-border-radius: 50%;
+        /**兼容苹果；谷歌，等一些浏览器认*/
+        -moz-border-radius: 50%;
+        /**兼容火狐浏览器*/
+        -o-border-radius: 50%;
+        /**兼容opera浏览器*/
+
+        border-radius: 50%;
+        background-color: #f70e0e;
+    }
+
+    /* 移动正方形距离左边 */
+    .heart-shape:before {
+        left: -90px;
+    }
+    /* 移动正方形距离上面 */
+    .heart-shape:after {
+        top: -90px;
+    }
+    </style>
+</head>
+<body>
+    <div class="heart-body">
+        <div class="heart-shape"></div>
+    </div>
+</body>
+</html>

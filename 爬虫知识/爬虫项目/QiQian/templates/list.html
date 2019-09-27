@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>奇千_详情</title>
+    <style type="text/css">
+
+        .da {
+            width: 990px;
+            height: auto;
+        }
+
+        .da .volume {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            background: #eeeeee;
+            border-top: 20px #ffffff solid;
+            margin-left: 240px;
+        }
+
+        h3 {
+            font: 700 18px/24px PingFangSC-Regular, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif;
+            overflow: hidden;
+            height: 24px;
+            padding-bottom: 11px;
+            padding-left: 15px;
+            border-bottom: 1px solid #666;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            font: 14px/40px PingFangSC-Regular, '-apple-system', Simsun;
+            float: left;
+            overflow: hidden;
+            width: 290px;
+            height: 40px;
+            padding-right: 60px;
+            border-bottom: 1px solid #ebebeb;
+        }
+
+        a {
+            color: #2E2D3C;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="da">
+    {% for i in l %}
+        <div class="volume">
+            <h3>{{ i.title }}</h3>
+            <ul>
+                {% for j in i.name %}
+                    <a href="#">
+                        <li>{{ j }}</li>
+                    </a>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+
+</div>
+
+
+</body>
+</html>

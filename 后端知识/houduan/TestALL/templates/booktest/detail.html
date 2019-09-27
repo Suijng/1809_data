@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示所有英雄</title>
+</head>
+<body>
+
+<ul>
+
+    {% for hero in heros  %}
+        <li>{{ hero.bname }}<a href="/delete/{{ hero.id }}/">删除</a></li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

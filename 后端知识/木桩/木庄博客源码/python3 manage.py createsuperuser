@@ -1,0 +1,148 @@
+python3 manage.py createsuperuser
+
+
+http://127.0.0.1:8000/
+
+admin/
+
+
+1、创建虚拟环境 安装django  切换虚拟环境
+2、django-admin startproject xxx
+3、python3 manage.py startapp xxx
+4、把应用加入到INSTALLED_APPS
+5、创建model
+6、python3 manage.py makemigrations
+7、python3 manage.py migrate
+8、python3 manage.py createsuperuser
+9、在应用创建urls,并且把urls配置项目里面urls
+10、在项目创建一个templates文件夹，在setting配置
+11、在views写获取数据，加载模块 渲染模块
+
+
+把今天所有流程自己走一遍
+
+
+把地区练习一下
+把今天消化掉
+元选项字段查询
+
+RestFul API
+
+get----查
+post----增
+put-----改
+delete----删
+
+
+www.baidu.com/？a=123&a=456
+
+form表单
+i: shuai
+from: AUTO
+to: AUTO
+smartresult: dict
+client: fanyideskweb
+salt: 1539913217050
+sign: 70e71532e4c69d6cc53068368a59b9bf
+doctype: json
+version: 2.1
+keyfrom: fanyi.web
+action: FY_BY_REALTIME
+typoResult: false
+
+
+baidu.com----cookie
+jiashu.com---cookie
+
+100000
+
+session依赖于cookie
+
+
+NoSQL 非关系数据库
+redis 
+键值对-------基于内存的数据库
+
+读取速度快的特点
+
+作用：一般缓存
+
+mongodb
+
+json-----文档
+
+
+i1h3nzk2f5ysx2uptzxp8l8f26uegqwr
+
+i1h3nzk2f5ysx2uptzxp8l8f26uegqwr
+
+
+
+6h88g2t0ibt86nw94yt9kpvzqg70ugqm
+6h88g2t0ibt86nw94yt9kpvzqg70ugqm
+
+c1096a834cd2d3dfc37087d543202226870a2d93:{"_session_expiry":0,"islogin":true,"myname":"\u54c8\u54c8"}
+
+
+{{ b.btitle}}
+
+b[btitle] 先找字典
+
+b.btitle 把b当做对象，先找属性，属性找不到。当做方法
+
+b.0
+b[0] 把0当做索引去找
+
+
+
+insert into booktest_bookinfo(title,bpub_date,bread,bcomment,isDelete) values
+('射雕英雄传','1980-5-1',12,34,0),
+('天龙八部','1986-7-24',36,40,0),
+('笑傲江湖','1995-12-24',20,80,0),
+('雪山飞狐','1987-11-11',58,24,0);
+
+
+
+insert into heroinfo(hname,hgender,hbook_id,hcomment,isDelete) values
+('郭靖',1,1,'降龙十八掌',0),
+('黄蓉',0,1,'打狗棍法',0),
+('黄药师',1,1,'弹指神通',0),
+('欧阳锋',1,1,'蛤蟆功',0),
+('梅超风',0,1,'九阴白骨爪',0),
+('乔峰',1,2,'降龙十八掌',0),
+('段誉',1,2,'六脉神剑',0),
+('虚竹',1,2,'天山六阳掌',0),
+('王语嫣',0,2,'神仙姐姐',0),
+('令狐冲',1,3,'独孤九剑',0),
+('任盈盈',0,3,'弹琴',0),
+('岳不群',1,3,'华山剑法',0),
+('东方不败',0,3,'葵花宝典',0),
+('胡斐',1,4,'胡家刀法',0),
+('苗若兰',0,4,'黄衣',0),
+('程灵素',0,4,'医术',0),
+('袁紫衣',0,4,'六合拳',0);
+
+
+id  name  parent
+ 1  黑龙江 Null
+
+ 2 哈尔市     1
+ 3 齐齐哈尔市  1
+
+ 4 龙沙区    3
+ 5 龙沙1区    3
+
+ parent_id = 1 查黑龙江省的市
+ parent_id = 3 查齐齐哈尔市的区
+
+
+
+
+中国 人民 好消息 
+
+域名商  www.2222.com
+
+
+
+
+

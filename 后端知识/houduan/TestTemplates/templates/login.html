@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证码</title>
+    <script language="javascript" type="text/javascript">
+        function RefreshImage()
+        {
+            var el =document.getElementById("ht");
+            el.src=el.src+'?';//这个特别重要
+        }
+    </script>
+</head>
+<body>
+
+<form action="/login/" method="post">
+
+    账号:<input type="text" name="name"> <br>
+
+    验证码:<input type="text" name="code" placeholder="请输入验证码">
+    <img id="ht" src="/verify_code/" onMouseUp="RefreshImage()"> <br>
+
+    <input type="submit" value="登录">
+    
+    {% csrf_token %}
+</form>
+
+
+
+</body>
+</html>

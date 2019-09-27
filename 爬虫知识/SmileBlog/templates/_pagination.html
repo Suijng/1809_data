@@ -1,0 +1,30 @@
+{% load i18n %}
+<style type="text/css">
+    .qq{
+        font-size: 20px;
+        color: #1E9FFF;
+    }
+</style>
+<div class="pagination">
+    {% if allArticle.has_previous %}
+        <a href="?{{ allArticle.previous_page_number.querystring }}" class="prev qq">上一页&nbsp;&nbsp;</a>
+    {% else %}
+        <span class="disabled prev qq">上一页&nbsp;&nbsp;</span>
+    {% endif %}
+    {% for page in allArticle.pages %}
+        {% if page %}
+            {% ifequal page allArticle.number %}
+                <span class="current page qq">{{ page }}&nbsp;</span>
+            {% else %}
+                <a href="?{{ page.querystring }}" class="page qq">{{ page }}&nbsp;</a>
+            {% endifequal %}
+        {% else %}
+            ...
+        {% endif %}
+    {% endfor %}
+    {% if allArticle.has_next %}
+        <a href="?{{ allArticle.next_page_number.querystring }}" class="next qq">&nbsp;&nbsp;下一页</a>
+    {% else %}
+        <span class="disabled next qq">&nbsp;&nbsp;下一页</span>
+    {% endif %}
+</div>

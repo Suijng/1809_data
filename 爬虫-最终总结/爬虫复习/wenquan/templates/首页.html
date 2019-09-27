@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=0.95, user-scalable=no"/>
+    <title>黄山醉温泉</title>
+    <link href="../static/css/base.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../static/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="../static/js/base.js"></script>
+    <!--[if IE 6]><script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+<script type="text/javascript">
+    window.onload = function(){
+        DD_belatedPNG.fix("img, div, a");
+    }
+</script>
+<![endif]-->
+    <!--[if lt IE 9]>
+   <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<!--HEADER-->
+<div class="header">
+    <div class="mar1000 clearfix">
+        <div class="logo"></div>
+        <div class="header_right">
+            <div class="homeinfo">
+                <label><span>免费预订电话：<strong>400-0559-700</strong></span>&nbsp;&nbsp;&nbsp;&nbsp;|</label>
+                <label><a href="/login/">会员登录</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/register/">注册</a>&nbsp;&nbsp;&nbsp;&nbsp;|</label>
+                <label><a href="">设为首页</a></label>
+            </div>
+            <div class="nav">
+                <a href="/index/" class="hover">首 页</a>
+                <a href="/order/">温泉预定</a>
+                <a href="/order/">酒店预定</a>
+                <a href="">醉悦旅居</a>
+                <a href="">养生餐饮</a>
+                <a href="">会议中心</a>
+                <a href="">促销活动</a>
+                <a href="">企业文化</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--HEADER-->
+
+
+<!--BIG PIC-->
+<div class="banner">
+    <div class="slider">
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <div class="img bg1">&nbsp;</div>
+                </li>
+                <li>
+                    <div class="img bg2">&nbsp;</div>
+                </li>
+                <li>
+                    <div class="img bg3">&nbsp;</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="clears"></div>
+    <script defer src="../static/js/slider.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+</div>
+<!--BIG PIC-->
+
+
+<!--CONTENT-->
+<div class="content">
+    <div class="mar1000 clearfix">
+
+
+        <!--优惠信息-->
+        <div class="discount">
+            <div class="d_title title01"><a href="/list/">更多优惠</a></div>
+            <div class="discount-list clearfix">
+                <ul>
+                    {% for article in articles %}
+                        <li class="nor">
+                            <div class="discount-itembg h300"></div>
+                            <div class="discount-item">
+                                <a href="/detail/{{ article.id }}"><img src="{{ article.img }}" alt=""/></a>
+                                <h3><a href="/detail/{{ article.id }}">{{ article.name|truncatechars:14 }}</a></h3>
+                                <p>{{ article.content|truncatechars:60 }}</p>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="clears"></div>
+        </div>
+
+        <div class="clears"></div>
+
+
+        <div class="H50"></div>
+
+
+        <!--介绍1-->
+        <div class="phone clearfix">
+            <!--醉左-->
+            <div class="pic_title01 pict01"></div>
+            <div class="phones">
+                <div class="pic01"></div>
+                <div class="smbg"></div>
+                <div class="picfont">
+                    <a href="/order/"></a>
+                    <p>
+                        酒店餐厅设在大堂二层，能同时容纳400人，自助餐可同时容纳520人。设有豪华宴会厅，可提供中西自助餐、西餐、东南亚风味饮食及地方风味菜肴等，是宾客举行高档宴请及商务会客的理想场所，一层的樽月廊环境优雅，其轻松惬意的氛围，时尚精致的鸡尾酒与西式小点，是中、西风格结合的典范。</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+<!--CONTENT-->
+
+
+<!--FOOTER-->
+<div class="bottom">
+    <a href="">网站首页</a>|
+    <a href="">温泉预定</a>|
+    <a href="">酒店预定</a>|
+    <a href="">醉悦旅居</a>|
+    <a href="">养生餐饮</a>|
+    <a href="">会议中心</a>|
+    <a href="">促销活动</a>|
+    <a href="">企业文化</a>
+</div>
+<div class="footer">
+    地址：黄山市屯溪区花山路新徽天地醉温泉国际度假城&nbsp;&nbsp;&nbsp;&nbsp;邮编:236010<br/>
+    电话：0559-2536999&nbsp;&nbsp;2568666&nbsp;&nbsp;&nbsp;&nbsp;免费预订电话：400-0559-700<br/>
+    Copyright &copy; 2003-2014 黄山 &middot; 醉温泉&nbsp;&nbsp;All rights reserved.&nbsp;&nbsp;皖ICP备11009137号
+</div>
+<!--FOOTER-->
+
+
+<!--侧边栏-->
+<div id="slide_bar">
+    <div class="evm"></div>
+    <div class="otherico">
+        <a href="" class="icon01"></a>
+        <a href="" class="icon02"></a>
+        <a href="" class="icon03"></a>
+        <a href="" class="icon04"></a>
+        <a href="" class="icon05"></a>
+        <a href="" class="icon06"></a>
+    </div>
+</div>
+<script type="text/javascript">
+    pos();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板</title>
+</head>
+<body>
+
+<h1>{{ name }}</h1>
+<h1>{{ age }}</h1>
+<h1>{{ hobby.a }}</h1>
+<h1>{{ sex.1 }}</h1>
+<h4>{{ book.show }}</h4>
+
+1.先把book当做字典,btitle当做键 <br>
+2.如果book不是字典,把book当做对象,先按照属性找,
+如果没有的话,按照方法 <br>
+3.如果这样book.0 把book当做列表 去第一个 <br>
+
+
+
+<ul>
+    {% for book in books %}
+        {% if forloop.counter == 1 %}
+            <li style="background: chartreuse">{{ forloop.counter }}----{{ book.btitle }}</li>
+        {% else %}
+            <li style="background: #ff5544">{{ forloop.counter }}----{{ book.btitle }}</li>
+        {% endif %}
+    {% empty %}
+        <li>空的</li>
+    {% endfor %}
+</ul>
+
+
+
+{#下午#}
+{{ gender|default:'男' }}
+
+长度: <h4>{{ books|length }}</h4>
+
+时间: <h4>{{ book.bpub_daet|date:'Y年m月d H:m:s'}}</h4>
+
+奇偶数:
+<ul>
+    {% for book in books %}
+        {% if forloop.counter|divisibleby:2 %}
+            <li style="background: chartreuse ">被2整除的---{{ book.btitile }}</li>
+        {% else %}
+            <li style="background: bisque">{{ book.btitle }}</li>
+        {% endif %}
+    {% endfor %}
+    <br>
+    <br>
+    <h4>加载自定义过滤器</h4>
+    {% load filters %}
+    {% for book in books %}
+        {% if forloop.counter|mod:3 %}
+            <li style="background: chocolate ">满足时---{{ book.btitile }}</li>
+        {% else %}
+            <li style="background: cyan">不满足时--{{ book.btitle }}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+
+</body>
+</html>

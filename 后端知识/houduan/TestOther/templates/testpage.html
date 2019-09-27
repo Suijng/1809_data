@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分页</title>
+</head>
+<body>
+
+<ul>
+    {% for area in list %}
+        <li>{{ area.hname }}</li>
+    {% endfor %}
+</ul>
+<br>
+<br>
+{% for index in plists%}
+    {% if pindexs == index%}
+        {{ index }}
+    {% else %}
+        <a href="/testpage/{{ index }}">{{ index }}</a>
+    {% endif %}
+{% endfor %}
+
+
+
+</body>
+</html>

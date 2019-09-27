@@ -1,0 +1,63 @@
+﻿.modal .modal-dialog{width: 1080px;margin: 120px auto;}
+.modal-content{height: 399px;}
+
+.modal-header button.close{
+	width: 25px;
+	height: 25px;
+	background-color: #000;
+	color: #fff;
+	border-radius: 12px;
+	margin-top: -12px;
+	margin-right: -12px;
+	    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 10;
+}
+.modal-dialog{margin: 100px 30px;}
+.ws-text{     margin-top: 5px;
+    font-size: 14px;
+    width: 600px;
+    float: right;
+    margin-right: 20px;
+        position: absolute;
+    top: 10px;
+    right: 30px;}
+.ws-text p{font-size: 14px;    margin: 0;}
+.ws-text span{color: #DA0203;margin: 0 10px;font-size: 16px;font-weight: 600;}
+.modal-header .modal-body{padding: 0;}
+.btn-primary {
+    color: #fff;
+    background-color: #FE5D05;
+    border-color: #FE5D05;
+}
+.modal-content .modal-header {
+    border-bottom: 0;
+    padding: 0;
+}
+.modal-content .modal-footer {
+	border-top:0;
+    text-align: center;
+}
+.ws-good-price{overflow: hidden;font-size: 14px;    padding-top: 10px;    margin-left: 110px;}
+.ourden-price{float: left;font-weight: 900;color: #000;}
+.ourden-price span{color:#DA0203 ;}
+.original-price{float: left;font-weight: 900;color: #B1B1B1;text-decoration: line-through;    margin-left: 15px;}
+.ws-text .week-cart{    float: right;
+    margin-top: -35px;
+    line-height: inherit;
+    background-color: #FE5D05;
+    width: 120px;
+    height: 30px;
+    }
+.ws-text  .week-cart:hover{color: #fff;} 
+
+.modal-body img{    border-radius: 4px;}
+/*样式调整*/
+.mt h2{    margin-top:0px;
+    margin-bottom:0px;}
+html *{
+   -webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: content-box;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传图片</title>
+</head>
+<body>
+
+<form action="/upload/" method="post" enctype="multipart/form-data">
+    enctype 属于多媒体资源 <br> <br>
+    <input type="file" name="pic">
+    <input type="submit" value="提交">
+    {% csrf_token %}
+
+</form>
+
+
+</body>
+</html>

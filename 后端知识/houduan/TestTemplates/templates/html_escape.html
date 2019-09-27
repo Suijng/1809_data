@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>转义</title>
+</head>
+<body>
+    转义: {{ content }} <br> <br>
+
+    关闭转义:  用过滤器{{ content|safe }}
+
+    用标签关闭转移:
+        {% autoescape off %}
+            {{ content }}
+        {% endautoescape %}
+
+
+    非转义:{{ content1|default:'<h1>老宋</h1>' }}
+
+    转义:{{ content1|default:'&lt;h1&gt;老宋&lt;/h1&gt;' }}
+
+</body>
+</html>
