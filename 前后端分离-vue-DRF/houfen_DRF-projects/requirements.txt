@@ -6,7 +6,7 @@ celery==3.1.25
 celery-with-redis==3.0
 cffi==1.11.5
 cryptography==2.4.1
-Django==1.11
+Django==1.11.29
 django-celery==3.2.1
 django-ckeditor==5.6.1
 django-haystack==2.8.1
